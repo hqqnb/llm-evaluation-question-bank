@@ -216,3 +216,8 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Local benchmark metadata
+outputs/results.jsonl
+image-urls.json
+test.png
