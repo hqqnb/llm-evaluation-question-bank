@@ -48,6 +48,18 @@ def fenced_candidates(response: str) -> list[tuple[str, str]]:
         info = match.group(1).strip().lower()
         language = re.split(r"[\s,:]", info, maxsplit=1)[0]
         candidates.append((language, match.group(2)))
+    # Handle an unclosed trailing fence (model hit the output limit mid-block):
+    # when the fence count is odd, treat everything after the last language
+    # marker as the block.
+    if response.count("```") % 2 == 1:
+        last = response.rfind("```")
+        rest = response[last + 3 :]
+        if rest.startswith("\n"):
+            rest = rest[1:]
+        info = re.split(r"[\s,:]", rest.splitlines()[0].strip().lower(), maxsplit=1)[0] if rest.splitlines() else ""
+        content = "\n".join(rest.splitlines()[1:]) if rest.splitlines() else ""
+        if info and content:
+            candidates.append((info, content))
     return candidates
 
 

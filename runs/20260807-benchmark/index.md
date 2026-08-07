@@ -116,7 +116,7 @@ Coding 题的运行预览链接在提取并发布后写入本页。
 | `coding-c04` | `qwen3.8-max` | success | [查看](./responses/coding-c04/qwen3.8-max.md) | [打开](https://hqqnb.github.io/llm-evaluation-previews/20260807-benchmark/coding-c04/qwen3.8-max/) | 有（2 个 URL） |
 | `coding-c04` | `gpt-5.5` | success | [查看](./responses/coding-c04/gpt-5.5.md) | [打开](https://hqqnb.github.io/llm-evaluation-previews/20260807-benchmark/coding-c04/gpt-5.5/) | 有（1 个 URL） |
 | `coding-c04` | `deepseek-v4-flash` | success | [查看](./responses/coding-c04/deepseek-v4-flash.md) | [打开](https://hqqnb.github.io/llm-evaluation-previews/20260807-benchmark/coding-c04/deepseek-v4-flash/) | 有（1 个 URL） |
-| `coding-c04` | `glm-5.2` | success | [查看](./responses/coding-c04/glm-5.2.md) | — | 有（1 个 URL） |
+| `coding-c04` | `glm-5.2` | success | [查看](./responses/coding-c04/glm-5.2.md) | [打开](https://hqqnb.github.io/llm-evaluation-previews/20260807-benchmark/coding-c04/glm-5.2/) | 有（1 个 URL） |
 | `coding-c04` | `opus-4.8` | success | [查看](./responses/coding-c04/opus-4.8.md) | [打开](https://hqqnb.github.io/llm-evaluation-previews/20260807-benchmark/coding-c04/opus-4.8/) | 有（2 个 URL） |
 | `coding-c04` | `opus-5` | success | [查看](./responses/coding-c04/opus-5.md) | [打开](https://hqqnb.github.io/llm-evaluation-previews/20260807-benchmark/coding-c04/opus-5/) | 有（3 个 URL） |
 | `coding-c04` | `kimi-k3` | success | [查看](./responses/coding-c04/kimi-k3.md) | [打开](https://hqqnb.github.io/llm-evaluation-previews/20260807-benchmark/coding-c04/kimi-k3/) | 有（2 个 URL） |
