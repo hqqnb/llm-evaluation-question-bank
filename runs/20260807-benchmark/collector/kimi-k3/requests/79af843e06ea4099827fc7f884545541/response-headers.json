@@ -1,0 +1,16 @@
+{
+  "cache-control": "no-cache",
+  "connection": "keep-alive",
+  "content-type": "text/event-stream",
+  "date": "Fri, 07 Aug 2026 03:18:06 GMT",
+  "msh-gid": "enterprise-tier-2",
+  "msh-org-id": "org-cd353de77e724c6f9a4eb4e0a45bd64e",
+  "msh-project-id": "proj-ad1a3b26e58942a1aeb7b412c93c189e",
+  "msh-request-id": "99c8e8bf-920e-11f1-8034-26371229c595",
+  "msh-trace-mode": "on",
+  "msh-uid": "d8668abid4m7h64d0cmg",
+  "set-cookie": "aliyungf_tc=c70c819bff5ca0cf1fac0ebb757994879c81c1f263935712f78fafd947d79d42; Path=/; HttpOnly",
+  "strict-transport-security": "max-age=31536000; includeSubDomains",
+  "transfer-encoding": "chunked",
+  "vary": "Accept-Encoding, Origin"
+}
