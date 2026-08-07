@@ -1,0 +1,14 @@
+{
+  "access-control-allow-credentials": "true",
+  "connection": "keep-alive",
+  "content-length": "239",
+  "content-type": "application/json",
+  "date": "Fri, 07 Aug 2026 05:16:48 GMT",
+  "eo-cache-status": "MISS",
+  "eo-log-uuid": "11032863316647793304",
+  "server": "openresty",
+  "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+  "vary": "origin, access-control-request-method, access-control-request-headers",
+  "x-content-type-options": "nosniff",
+  "x-ds-trace-id": "a0aa5fe4ad4f8915361f9a895846ccec"
+}

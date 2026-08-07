@@ -56,7 +56,7 @@ Coding 题的运行预览链接在提取并发布后写入本页。
 | `reasoning-r06` | `hy3` | success | [查看](./responses/reasoning-r06/hy3.md) | — | 无 |
 | `reasoning-r06` | `qwen3.8-max` | success | [查看](./responses/reasoning-r06/qwen3.8-max.md) | — | 无 |
 | `reasoning-r06` | `gpt-5.5` | success | [查看](./responses/reasoning-r06/gpt-5.5.md) | — | 无 |
-| `reasoning-r06` | `deepseek-v4-flash` | failed | [查看](./responses/reasoning-r06/deepseek-v4-flash.md) | — | 无 |
+| `reasoning-r06` | `deepseek-v4-flash` | success | [查看](./responses/reasoning-r06/deepseek-v4-flash.md) | — | 无 |
 | `reasoning-r06` | `glm-5.2` | success | [查看](./responses/reasoning-r06/glm-5.2.md) | — | 无 |
 | `reasoning-r06` | `opus-4.8` | success | [查看](./responses/reasoning-r06/opus-4.8.md) | — | 无 |
 | `reasoning-r06` | `opus-5` | success | [查看](./responses/reasoning-r06/opus-5.md) | — | 无 |
@@ -86,9 +86,9 @@ Coding 题的运行预览链接在提取并发布后写入本页。
 | --- | --- | --- | --- | --- | --- |
 | `coding-c01` | `gpt-5.6-sol` | success | [查看](./responses/coding-c01/gpt-5.6-sol.md) | [打开](https://hqqnb.github.io/llm-evaluation-previews/20260807-benchmark/coding-c01/gpt-5.6-sol/) | 有（3 个 URL） |
 | `coding-c01` | `hy3` | success | [查看](./responses/coding-c01/hy3.md) | [打开](https://hqqnb.github.io/llm-evaluation-previews/20260807-benchmark/coding-c01/hy3/) | 有（2 个 URL） |
-| `coding-c01` | `qwen3.8-max` | success | [查看](./responses/coding-c01/qwen3.8-max.md) | — | 无 |
+| `coding-c01` | `qwen3.8-max` | success | [查看](./responses/coding-c01/qwen3.8-max.md) | [打开](https://hqqnb.github.io/llm-evaluation-previews/20260807-benchmark/coding-c01/qwen3.8-max/) | 有（5 个 URL） |
 | `coding-c01` | `gpt-5.5` | success | [查看](./responses/coding-c01/gpt-5.5.md) | [打开](https://hqqnb.github.io/llm-evaluation-previews/20260807-benchmark/coding-c01/gpt-5.5/) | 有（3 个 URL） |
-| `coding-c01` | `deepseek-v4-flash` | success | [查看](./responses/coding-c01/deepseek-v4-flash.md) | [打开](https://hqqnb.github.io/llm-evaluation-previews/20260807-benchmark/coding-c01/deepseek-v4-flash/) | 有（3 个 URL） |
+| `coding-c01` | `deepseek-v4-flash` | success | [查看](./responses/coding-c01/deepseek-v4-flash.md) | [打开](https://hqqnb.github.io/llm-evaluation-previews/20260807-benchmark/coding-c01/deepseek-v4-flash/) | 有（2 个 URL） |
 | `coding-c01` | `glm-5.2` | success | [查看](./responses/coding-c01/glm-5.2.md) | [打开](https://hqqnb.github.io/llm-evaluation-previews/20260807-benchmark/coding-c01/glm-5.2/) | 有（6 个 URL） |
 | `coding-c01` | `opus-4.8` | success | [查看](./responses/coding-c01/opus-4.8.md) | [打开](https://hqqnb.github.io/llm-evaluation-previews/20260807-benchmark/coding-c01/opus-4.8/) | 有（2 个 URL） |
 | `coding-c01` | `opus-5` | failed | [查看](./responses/coding-c01/opus-5.md) | — | 无 |
@@ -106,7 +106,7 @@ Coding 题的运行预览链接在提取并发布后写入本页。
 | `coding-c03` | `hy3` | success | [查看](./responses/coding-c03/hy3.md) | [打开](https://hqqnb.github.io/llm-evaluation-previews/20260807-benchmark/coding-c03/hy3/) | 有（3 个 URL） |
 | `coding-c03` | `qwen3.8-max` | success | [查看](./responses/coding-c03/qwen3.8-max.md) | [打开](https://hqqnb.github.io/llm-evaluation-previews/20260807-benchmark/coding-c03/qwen3.8-max/) | 有（4 个 URL） |
 | `coding-c03` | `gpt-5.5` | success | [查看](./responses/coding-c03/gpt-5.5.md) | [打开](https://hqqnb.github.io/llm-evaluation-previews/20260807-benchmark/coding-c03/gpt-5.5/) | 有（2 个 URL） |
-| `coding-c03` | `deepseek-v4-flash` | success | [查看](./responses/coding-c03/deepseek-v4-flash.md) | [打开](https://hqqnb.github.io/llm-evaluation-previews/20260807-benchmark/coding-c03/deepseek-v4-flash/) | 有（2 个 URL） |
+| `coding-c03` | `deepseek-v4-flash` | success | [查看](./responses/coding-c03/deepseek-v4-flash.md) | [打开](https://hqqnb.github.io/llm-evaluation-previews/20260807-benchmark/coding-c03/deepseek-v4-flash/) | 有（3 个 URL） |
 | `coding-c03` | `glm-5.2` | success | [查看](./responses/coding-c03/glm-5.2.md) | [打开](https://hqqnb.github.io/llm-evaluation-previews/20260807-benchmark/coding-c03/glm-5.2/) | 有（4 个 URL） |
 | `coding-c03` | `opus-4.8` | success | [查看](./responses/coding-c03/opus-4.8.md) | [打开](https://hqqnb.github.io/llm-evaluation-previews/20260807-benchmark/coding-c03/opus-4.8/) | 有（2 个 URL） |
 | `coding-c03` | `opus-5` | success | [查看](./responses/coding-c03/opus-5.md) | [打开](https://hqqnb.github.io/llm-evaluation-previews/20260807-benchmark/coding-c03/opus-5/) | 有（3 个 URL） |
@@ -142,7 +142,7 @@ Coding 题的运行预览链接在提取并发布后写入本页。
 | `coding-c07` | `hy3` | success | [查看](./responses/coding-c07/hy3.md) | [打开](https://hqqnb.github.io/llm-evaluation-previews/20260807-benchmark/coding-c07/hy3/) | 有（5 个 URL） |
 | `coding-c07` | `qwen3.8-max` | success | [查看](./responses/coding-c07/qwen3.8-max.md) | [打开](https://hqqnb.github.io/llm-evaluation-previews/20260807-benchmark/coding-c07/qwen3.8-max/) | 有（10 个 URL） |
 | `coding-c07` | `gpt-5.5` | success | [查看](./responses/coding-c07/gpt-5.5.md) | [打开](https://hqqnb.github.io/llm-evaluation-previews/20260807-benchmark/coding-c07/gpt-5.5/) | 有（6 个 URL） |
-| `coding-c07` | `deepseek-v4-flash` | success | [查看](./responses/coding-c07/deepseek-v4-flash.md) | [打开](https://hqqnb.github.io/llm-evaluation-previews/20260807-benchmark/coding-c07/deepseek-v4-flash/) | 有（4 个 URL） |
+| `coding-c07` | `deepseek-v4-flash` | success | [查看](./responses/coding-c07/deepseek-v4-flash.md) | [打开](https://hqqnb.github.io/llm-evaluation-previews/20260807-benchmark/coding-c07/deepseek-v4-flash/) | 有（5 个 URL） |
 | `coding-c07` | `glm-5.2` | success | [查看](./responses/coding-c07/glm-5.2.md) | [打开](https://hqqnb.github.io/llm-evaluation-previews/20260807-benchmark/coding-c07/glm-5.2/) | 有（7 个 URL） |
 | `coding-c07` | `opus-4.8` | success | [查看](./responses/coding-c07/opus-4.8.md) | [打开](https://hqqnb.github.io/llm-evaluation-previews/20260807-benchmark/coding-c07/opus-4.8/) | 有（3 个 URL） |
 | `coding-c07` | `opus-5` | failed | [查看](./responses/coding-c07/opus-5.md) | — | 无 |
@@ -151,7 +151,7 @@ Coding 题的运行预览链接在提取并发布后写入本页。
 | `coding-c08` | `hy3` | success | [查看](./responses/coding-c08/hy3.md) | [打开](https://hqqnb.github.io/llm-evaluation-previews/20260807-benchmark/coding-c08/hy3/) | 有（1 个 URL） |
 | `coding-c08` | `qwen3.8-max` | success | [查看](./responses/coding-c08/qwen3.8-max.md) | [打开](https://hqqnb.github.io/llm-evaluation-previews/20260807-benchmark/coding-c08/qwen3.8-max/) | 无 |
 | `coding-c08` | `gpt-5.5` | failed | [查看](./responses/coding-c08/gpt-5.5.md) | — | 无 |
-| `coding-c08` | `deepseek-v4-flash` | success | [查看](./responses/coding-c08/deepseek-v4-flash.md) | — | 有（1 个 URL） |
+| `coding-c08` | `deepseek-v4-flash` | success | [查看](./responses/coding-c08/deepseek-v4-flash.md) | [打开](https://hqqnb.github.io/llm-evaluation-previews/20260807-benchmark/coding-c08/deepseek-v4-flash/) | 有（1 个 URL） |
 | `coding-c08` | `glm-5.2` | success | [查看](./responses/coding-c08/glm-5.2.md) | [打开](https://hqqnb.github.io/llm-evaluation-previews/20260807-benchmark/coding-c08/glm-5.2/) | 有（2 个 URL） |
 | `coding-c08` | `opus-4.8` | success | [查看](./responses/coding-c08/opus-4.8.md) | — | 无 |
 | `coding-c08` | `opus-5` | failed | [查看](./responses/coding-c08/opus-5.md) | — | 无 |

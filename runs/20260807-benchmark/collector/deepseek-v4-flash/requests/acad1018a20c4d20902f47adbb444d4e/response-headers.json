@@ -1,0 +1,15 @@
+{
+  "access-control-allow-credentials": "true",
+  "cache-control": "no-cache",
+  "connection": "keep-alive",
+  "content-type": "text/event-stream; charset=utf-8",
+  "date": "Fri, 07 Aug 2026 05:32:44 GMT",
+  "eo-cache-status": "MISS",
+  "eo-log-uuid": "5200184834898744157",
+  "server": "openresty",
+  "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+  "transfer-encoding": "chunked",
+  "vary": "origin, access-control-request-method, access-control-request-headers",
+  "x-content-type-options": "nosniff",
+  "x-ds-trace-id": "f9a268c08bae5e1b0172e4fecfad096f"
+}

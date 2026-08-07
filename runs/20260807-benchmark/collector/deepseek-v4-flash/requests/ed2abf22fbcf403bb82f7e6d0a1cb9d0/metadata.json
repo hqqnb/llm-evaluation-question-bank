@@ -1,0 +1,30 @@
+{
+  "completed_stream": false,
+  "ended_at": "2026-08-07T05:16:48.374069Z",
+  "endpoint": "/v1/chat/completions",
+  "finish_reason": null,
+  "http_status": 400,
+  "model": "deepseek-v4-flash",
+  "model_alias": "deepseek-v4-flash",
+  "prompt_id": "multimodal-mm03",
+  "prompt_notes": "由题库原文自动导出；未添加系统提示词。",
+  "prompt_tags": [
+    "multimodal",
+    "benchmark-20260806"
+  ],
+  "prompt_title": "multimodal #3",
+  "raw_response_path": "requests/ed2abf22fbcf403bb82f7e6d0a1cb9d0/response.sse",
+  "repeat_index": 1,
+  "request_id": "ed2abf22fbcf403bb82f7e6d0a1cb9d0",
+  "request_sha256": "9101ea71dd28293f7b2c7a018ffe48202e4ba75ec66e063ce8d54b8c1ba33184",
+  "response_text_path": "requests/ed2abf22fbcf403bb82f7e6d0a1cb9d0/response.md",
+  "run_id": "20260807T050337065179Z-39a83e6b",
+  "started_at": "2026-08-07T05:16:47.878071Z",
+  "status": "failed",
+  "time_to_first_event_ms": null,
+  "time_to_first_reasoning_ms": null,
+  "time_to_first_text_ms": null,
+  "time_to_headers_ms": 491.769334,
+  "total_time_ms": 496.001792,
+  "usage": null
+}
