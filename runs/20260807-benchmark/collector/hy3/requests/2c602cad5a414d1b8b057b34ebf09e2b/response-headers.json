@@ -1,0 +1,12 @@
+{
+  "access-control-allow-headers": "Content-Type, Authorization, X-Request-ID",
+  "access-control-allow-methods": "GET, POST, PUT, DELETE, OPTIONS",
+  "access-control-allow-origin": "*",
+  "cache-control": "no-cache",
+  "connection": "keep-alive",
+  "content-type": "text/event-stream",
+  "date": "Thu, 06 Aug 2026 16:45:38 GMT",
+  "transfer-encoding": "chunked",
+  "x-request-id": "cdd8aee2-ab6d-4c0d-8799-9285f277612e",
+  "x-trace-id": "cdd8aee2ab6d4c0d87999285f277612e"
+}

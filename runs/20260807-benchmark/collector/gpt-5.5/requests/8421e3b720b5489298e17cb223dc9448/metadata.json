@@ -1,0 +1,30 @@
+{
+  "completed_stream": false,
+  "ended_at": "2026-08-06T17:49:17.604863Z",
+  "endpoint": "/v1/chat/completions",
+  "finish_reason": null,
+  "http_status": 200,
+  "model": "gpt-5.5",
+  "model_alias": "gpt-5.5",
+  "prompt_id": "coding-c08",
+  "prompt_notes": "由题库原文自动导出；未添加系统提示词。",
+  "prompt_tags": [
+    "coding",
+    "benchmark-20260806"
+  ],
+  "prompt_title": "coding #8",
+  "raw_response_path": "requests/8421e3b720b5489298e17cb223dc9448/response.sse",
+  "repeat_index": 1,
+  "request_id": "8421e3b720b5489298e17cb223dc9448",
+  "request_sha256": "1103aafadf102cd439b2146ec504e82520891b86780e4549cba1ec2877a6f237",
+  "response_text_path": "requests/8421e3b720b5489298e17cb223dc9448/response.md",
+  "run_id": "20260806T170530719691Z-dffc656f",
+  "started_at": "2026-08-06T17:34:15.716530Z",
+  "status": "failed",
+  "time_to_first_event_ms": 1167.46575,
+  "time_to_first_reasoning_ms": null,
+  "time_to_first_text_ms": 463863.68825,
+  "time_to_headers_ms": 1166.671292,
+  "total_time_ms": 901858.72975,
+  "usage": null
+}

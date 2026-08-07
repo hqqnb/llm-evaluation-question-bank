@@ -1,0 +1,12 @@
+{
+  "connection": "keep-alive",
+  "content-length": "459",
+  "content-type": "application/json; charset=utf-8",
+  "date": "Thu, 06 Aug 2026 17:57:16 GMT",
+  "server": "ZT/2.0",
+  "x-apisix-upstream-status": "502",
+  "x-oneapi-request-id": "2026080701571528489930393335587",
+  "x-ratelimit-limit-requests": "300",
+  "x-ratelimit-remaining-requests": "299",
+  "x-zt-request-id": "c5cc28ce-4059-475b-9fdc-887872bd7340"
+}

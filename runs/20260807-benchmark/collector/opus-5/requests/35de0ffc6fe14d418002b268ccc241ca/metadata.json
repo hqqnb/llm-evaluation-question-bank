@@ -1,0 +1,31 @@
+{
+  "completed_stream": false,
+  "ended_at": "2026-08-06T16:33:10.756253Z",
+  "endpoint": "/v1/responses",
+  "finish_reason": null,
+  "http_status": 200,
+  "model": "Opus 5",
+  "model_alias": "opus-5",
+  "prompt_id": "coding-c07",
+  "prompt_notes": "由题库原文自动导出；未添加系统提示词。",
+  "prompt_tags": [
+    "coding",
+    "benchmark-20260806"
+  ],
+  "prompt_title": "coding #7",
+  "raw_response_path": "requests/35de0ffc6fe14d418002b268ccc241ca/response.sse",
+  "reasoning_text_path": "requests/35de0ffc6fe14d418002b268ccc241ca/reasoning.md",
+  "repeat_index": 1,
+  "request_id": "35de0ffc6fe14d418002b268ccc241ca",
+  "request_sha256": "4450047463ca729a36f2e4092b2b9c5fec36efb5bb748d435224d5d609806c1d",
+  "response_text_path": "requests/35de0ffc6fe14d418002b268ccc241ca/response.md",
+  "run_id": "20260806T152320959148Z-e1ff674f",
+  "started_at": "2026-08-06T16:23:07.345058Z",
+  "status": "failed",
+  "time_to_first_event_ms": 4385.704167,
+  "time_to_first_reasoning_ms": 4390.253209,
+  "time_to_first_text_ms": 403275.775834,
+  "time_to_headers_ms": 4383.225042,
+  "total_time_ms": 603399.2025,
+  "usage": null
+}

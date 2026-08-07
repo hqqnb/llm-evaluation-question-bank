@@ -1,0 +1,31 @@
+{
+  "completed_stream": false,
+  "ended_at": "2026-08-06T17:43:47.557380Z",
+  "endpoint": "/v1/chat/completions",
+  "finish_reason": null,
+  "http_status": 200,
+  "model": "GLM-5.2",
+  "model_alias": "glm-5.2",
+  "prompt_id": "coding-c03",
+  "prompt_notes": "由题库原文自动导出；未添加系统提示词。",
+  "prompt_tags": [
+    "coding",
+    "benchmark-20260806"
+  ],
+  "prompt_title": "coding #3",
+  "raw_response_path": "requests/ab0a26186a38485abba50ffe57ae58bc/response.sse",
+  "reasoning_text_path": "requests/ab0a26186a38485abba50ffe57ae58bc/reasoning.md",
+  "repeat_index": 1,
+  "request_id": "ab0a26186a38485abba50ffe57ae58bc",
+  "request_sha256": "7f82d78e4c9bcb9fb4053e1bb5fb69adcf901954de7fe752cb32b5cf141d138e",
+  "response_text_path": "requests/ab0a26186a38485abba50ffe57ae58bc/response.md",
+  "run_id": "20260806T171119351049Z-f5787e47",
+  "started_at": "2026-08-06T17:33:47.405414Z",
+  "status": "failed",
+  "time_to_first_event_ms": 522.716708,
+  "time_to_first_reasoning_ms": 522.805916,
+  "time_to_first_text_ms": 595447.800291,
+  "time_to_headers_ms": 521.845791,
+  "total_time_ms": 600124.214541,
+  "usage": null
+}

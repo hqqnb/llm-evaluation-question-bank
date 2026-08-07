@@ -1,0 +1,11 @@
+{
+  "messages": [
+    {
+      "content": "设 \nN\n 表示满足条件的正整数有序三元组 \n(a,b,c)\n 的个数，其中 \na,b,c≤3\n6\n，且 \na\n3\n+b\n3\n+c\n3\nqie 为 \n3\n7\n 的倍数。求 \nN\n 除以 \n1000\n 的余数。\n\n输出要求：\n请给出完整推理过程，并在最后一行写“最终答案：<答案>”。",
+      "role": "user"
+    }
+  ],
+  "model": "GLM-5.2",
+  "stream": true,
+  "temperature": 0
+}

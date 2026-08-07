@@ -1,0 +1,41 @@
+{
+  "completed_stream": true,
+  "ended_at": "2026-08-07T03:10:06.752055Z",
+  "endpoint": "/v1/chat/completions",
+  "finish_reason": "stop",
+  "http_status": 200,
+  "model": "GLM-5.2",
+  "model_alias": "glm-5.2",
+  "prompt_id": "coding-c03",
+  "prompt_notes": "由题库原文自动导出；未添加系统提示词。",
+  "prompt_tags": [
+    "coding",
+    "benchmark-20260806"
+  ],
+  "prompt_title": "coding #3",
+  "raw_response_path": "requests/bd705316e7c04cc9a3c0588e54ae3860/response.sse",
+  "reasoning_text_path": "requests/bd705316e7c04cc9a3c0588e54ae3860/reasoning.md",
+  "repeat_index": 1,
+  "request_id": "bd705316e7c04cc9a3c0588e54ae3860",
+  "request_sha256": "7f82d78e4c9bcb9fb4053e1bb5fb69adcf901954de7fe752cb32b5cf141d138e",
+  "response_text_path": "requests/bd705316e7c04cc9a3c0588e54ae3860/response.md",
+  "run_id": "20260807T025228877597Z-95307dc4",
+  "started_at": "2026-08-07T03:02:29.070982Z",
+  "status": "success",
+  "time_to_first_event_ms": 604.969542,
+  "time_to_first_reasoning_ms": 605.030167,
+  "time_to_first_text_ms": 368184.22075,
+  "time_to_headers_ms": 604.336167,
+  "total_time_ms": 457777.01075,
+  "usage": {
+    "completion_tokens": 39166,
+    "completion_tokens_details": {
+      "reasoning_tokens": 29926
+    },
+    "prompt_tokens": 97,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 39263
+  }
+}

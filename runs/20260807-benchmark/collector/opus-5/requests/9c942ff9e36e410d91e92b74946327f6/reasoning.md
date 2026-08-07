@@ -1,0 +1,3 @@
+I'm working through the Conway leading number approach to find the expected waiting time for the pattern "TENETENET". I need to identify which prefix lengths match the corresponding suffix—checking positions 1 through 9 where the first k characters equal the last k characters—then sum 26 raised to each matching k value.
+
+After checking all overlaps, I find matches at k=9 (the full pattern), k=5 (TENET appears at both the start and end), and k=1 (T matches T). This gives me 26^9 + 26^5 + 26, which calculates to 5,429,515,560,378 as the expected waiting time.

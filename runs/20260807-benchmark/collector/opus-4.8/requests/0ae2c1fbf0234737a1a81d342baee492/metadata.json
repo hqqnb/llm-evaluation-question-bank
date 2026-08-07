@@ -1,0 +1,31 @@
+{
+  "completed_stream": false,
+  "ended_at": "2026-08-06T17:29:38.815141Z",
+  "endpoint": "/v1/responses",
+  "finish_reason": null,
+  "http_status": 200,
+  "model": "Opus 4.8",
+  "model_alias": "opus-4.8",
+  "prompt_id": "reasoning-r03",
+  "prompt_notes": "由题库原文自动导出；未添加系统提示词。",
+  "prompt_tags": [
+    "reasoning",
+    "benchmark-20260806"
+  ],
+  "prompt_title": "reasoning #3",
+  "raw_response_path": "requests/0ae2c1fbf0234737a1a81d342baee492/response.sse",
+  "reasoning_text_path": "requests/0ae2c1fbf0234737a1a81d342baee492/reasoning.md",
+  "repeat_index": 1,
+  "request_id": "0ae2c1fbf0234737a1a81d342baee492",
+  "request_sha256": "13505410ed7d0db53376eaf01b4c4e57b1f043ae0db3720e348487b50cb91787",
+  "response_text_path": "requests/0ae2c1fbf0234737a1a81d342baee492/response.md",
+  "run_id": "20260806T170905030554Z-1f20a465",
+  "started_at": "2026-08-06T17:19:35.410960Z",
+  "status": "failed",
+  "time_to_first_event_ms": 4006.741833,
+  "time_to_first_reasoning_ms": 4007.128208,
+  "time_to_first_text_ms": null,
+  "time_to_headers_ms": 4006.078542,
+  "total_time_ms": 603432.917708,
+  "usage": null
+}

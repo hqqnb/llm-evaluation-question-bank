@@ -1,0 +1,33 @@
+{
+  "config_sha256": "4c161f77beeea8cd3812ab04191c3f81681c42991577f087c643fe504ab31245",
+  "created_at": "2026-08-06T17:09:05.031095Z",
+  "model_aliases": [
+    "opus-4.8"
+  ],
+  "oneapi_base_url": "https://oneapi-comate.baidu-int.com",
+  "prompt_ids": [
+    "reasoning-r01",
+    "reasoning-r02",
+    "reasoning-r03",
+    "reasoning-r04",
+    "reasoning-r05",
+    "reasoning-r06",
+    "reasoning-r07",
+    "reasoning-r08",
+    "coding-c01",
+    "coding-c02",
+    "coding-c03",
+    "coding-c04",
+    "coding-c05",
+    "coding-c06",
+    "coding-c07",
+    "coding-c08",
+    "multimodal-mm01",
+    "multimodal-mm02",
+    "multimodal-mm03",
+    "multimodal-mm04"
+  ],
+  "prompts_sha256": "aebf41df36a874f17f36d1a47f50f7485f074e0a072a9fd0e23a9d2c8338ff8a",
+  "repeat": 1,
+  "run_id": "20260806T170905030554Z-1f20a465"
+}

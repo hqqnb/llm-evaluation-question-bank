@@ -124,8 +124,8 @@ def write_index(
             [
                 f"## {category_names[category]}",
                 "",
-                "| 题目 | 模型 | 状态 | 原始回答 | 运行预览 |",
-                "| --- | --- | --- | --- | --- |",
+                "| 题目 | 模型 | 状态 | 原始回答 | 运行预览 | 外部依赖 |",
+                "| --- | --- | --- | --- | --- | --- |",
             ]
         )
         for item in items:
@@ -139,9 +139,13 @@ def write_index(
                 answer_link = f"[查看](./{relative_answer.as_posix()})"
                 preview_url = record.get("preview_url")
                 preview_link = f"[打开]({preview_url})" if preview_url else "—"
+                external = record.get("external_urls") or []
+                external_note = (
+                    f"有（{len(external)} 个 URL）" if external else "无"
+                )
                 lines.append(
                     f"| `{item['id']}` | `{alias}` | {record['status']} | "
-                    f"{answer_link} | {preview_link} |"
+                    f"{answer_link} | {preview_link} | {external_note} |"
                 )
         lines.append("")
     path.write_text("\n".join(lines), encoding="utf-8")
@@ -170,7 +174,11 @@ def import_runs(
         for alias, source_run in collector_runs:
             run_metadata, results = validate_run(alias, source_run, prompt_ids)
             archive_destination = temporary_path / "collector" / alias
-            shutil.copytree(source_run, archive_destination)
+            shutil.copytree(
+                source_run,
+                archive_destination,
+                ignore=shutil.ignore_patterns("*.sse"),
+            )
             imported_runs.append(
                 {
                     "model_alias": alias,
@@ -221,6 +229,9 @@ def import_runs(
                     "error_type",
                 ):
                     record[key] = source_record.get(key)
+                for key in ("notes", "variant"):
+                    if source_record.get(key) is not None:
+                        record[key] = source_record[key]
                 all_records.append(record)
 
         expected = len(items) * len(collector_runs)

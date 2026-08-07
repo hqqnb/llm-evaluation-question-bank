@@ -1,0 +1,5 @@
+{
+  "body": "{\"error\":{\"message\":\"upstream HTTP 429: {\\\"__type\\\":\\\"com.amazon.kiro.runtimeservice#ThrottlingException\\\",\\\"message\\\":\\\"Too many requests, please wait before trying again.\\\",\\\"reason\\\":\\\"USER_REQUEST_RATE_EXCEEDED\\\"} (request id: 2026080700454877897597460351745)\",\"type\":\"api_error\",\"param\":\"\",\"code\":null}}",
+  "message": "OneAPI returned HTTP 502",
+  "type": "http_error"
+}

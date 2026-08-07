@@ -1,0 +1,5 @@
+{
+  "body": null,
+  "message": "Stream ended before a completion event",
+  "type": "incomplete_stream"
+}

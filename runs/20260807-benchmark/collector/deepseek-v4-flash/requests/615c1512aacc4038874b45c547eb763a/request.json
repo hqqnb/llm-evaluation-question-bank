@@ -1,0 +1,12 @@
+{
+  "max_tokens": 65536,
+  "messages": [
+    {
+      "content": "Generate an animated SVG of a giraffe driving a tiny car\n\n输出要求：\n请直接完成任务并交付可运行产物；同时提供运行方式和必要的测试说明。",
+      "role": "user"
+    }
+  ],
+  "model": "DeepSeek-V4-Flash",
+  "stream": true,
+  "temperature": 0
+}

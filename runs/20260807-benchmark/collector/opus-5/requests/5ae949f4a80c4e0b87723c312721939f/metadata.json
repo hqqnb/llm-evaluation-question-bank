@@ -1,0 +1,30 @@
+{
+  "completed_stream": false,
+  "ended_at": "2026-08-06T16:47:15.270568Z",
+  "endpoint": "/v1/responses",
+  "finish_reason": null,
+  "http_status": 502,
+  "model": "Opus 5",
+  "model_alias": "opus-5",
+  "prompt_id": "multimodal-mm04",
+  "prompt_notes": "由题库原文自动导出；未添加系统提示词。",
+  "prompt_tags": [
+    "multimodal",
+    "benchmark-20260806"
+  ],
+  "prompt_title": "multimodal #4",
+  "raw_response_path": "requests/5ae949f4a80c4e0b87723c312721939f/response.sse",
+  "repeat_index": 1,
+  "request_id": "5ae949f4a80c4e0b87723c312721939f",
+  "request_sha256": "4a79f6970fda7ba15e6b572f1ec7d65edf5abb1f8bcdc08105b3db8c10bf910a",
+  "response_text_path": "requests/5ae949f4a80c4e0b87723c312721939f/response.md",
+  "run_id": "20260806T152320959148Z-e1ff674f",
+  "started_at": "2026-08-06T16:45:48.158392Z",
+  "status": "failed",
+  "time_to_first_event_ms": null,
+  "time_to_first_reasoning_ms": null,
+  "time_to_first_text_ms": null,
+  "time_to_headers_ms": 87109.296875,
+  "total_time_ms": 87111.739083,
+  "usage": null
+}

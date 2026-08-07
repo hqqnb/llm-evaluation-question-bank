@@ -1,0 +1,15 @@
+{
+  "cache-control": "no-cache",
+  "connection": "keep-alive",
+  "content-type": "text/event-stream",
+  "date": "Thu, 06 Aug 2026 17:24:29 GMT",
+  "request-id": "2026080701242829900027026865552",
+  "server": "ZT/2.0",
+  "transfer-encoding": "chunked",
+  "x-apisix-upstream-status": "200",
+  "x-oneapi-request-id": "2026080701242829900027026865552",
+  "x-ratelimit-limit-requests": "300",
+  "x-ratelimit-remaining-requests": "299",
+  "x-request-id": "c0d229e5-88ba-47a7-8dbf-9d652a8c9db0",
+  "x-zt-request-id": "af2949d9-df2d-44d4-b4bd-6577a2b25990"
+}

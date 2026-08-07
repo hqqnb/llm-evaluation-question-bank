@@ -1,0 +1,37 @@
+{
+  "completed_stream": true,
+  "ended_at": "2026-08-06T17:52:24.280101Z",
+  "endpoint": "/v1/chat/completions",
+  "finish_reason": "stop",
+  "http_status": 200,
+  "model": "gpt-5.5",
+  "model_alias": "gpt-5.5",
+  "prompt_id": "multimodal-mm03",
+  "prompt_notes": "由题库原文自动导出；未添加系统提示词。",
+  "prompt_tags": [
+    "multimodal",
+    "benchmark-20260806"
+  ],
+  "prompt_title": "multimodal #3",
+  "raw_response_path": "requests/94981c92bce64b7c842be53efd3fb4d8/response.sse",
+  "repeat_index": 1,
+  "request_id": "94981c92bce64b7c842be53efd3fb4d8",
+  "request_sha256": "ce91cc6cc92a87a5b97563342911ab92c5bb1b3af3052521aa5fa4cd3cf7ed8b",
+  "response_text_path": "requests/94981c92bce64b7c842be53efd3fb4d8/response.md",
+  "run_id": "20260806T170530719691Z-dffc656f",
+  "started_at": "2026-08-06T17:51:52.192844Z",
+  "status": "success",
+  "time_to_first_event_ms": 25699.236833,
+  "time_to_first_reasoning_ms": null,
+  "time_to_first_text_ms": 25699.293458,
+  "time_to_headers_ms": 25698.614667,
+  "total_time_ms": 32087.154083,
+  "usage": {
+    "completion_tokens": 1291,
+    "completion_tokens_details": {
+      "reasoning_tokens": 848
+    },
+    "prompt_tokens": 904,
+    "total_tokens": 2195
+  }
+}

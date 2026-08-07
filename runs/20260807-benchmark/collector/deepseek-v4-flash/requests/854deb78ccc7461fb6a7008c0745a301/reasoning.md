@@ -1,0 +1,5 @@
+We need answer in Chinese likely. Need see image? User says [Unsupported Image]. We don't actually have image? The prompt includes "[Unsupported Image]" placeholder. Need respond unable to see image? Need maybe ask to reupload? But output requirement: "请按题目编号逐项回答；看不清或无法确定的内容请明确说明。" We need follow. We need determine if there is an image? The message content has "[Unsupported Image]" meaning image unsupported in chat, not accessible. We should state无法看到题目图片，无法作答. But maybe need provide "按题目编号逐项回答" no numbered list? We can say 题目图片未能显示/不支持，请重新上传图片，我再按编号分析。 Need be concise.
+
+However, maybe the image is hidden? Let's think. The "user" attached an image, but in prompt it's "[Unsupported Image]". As assistant via API, we may not receive image if unsupported? We can only see text. Need answer accordingly. But maybe they expect solving visual reasoning; not possible. Need not fabricate.
+
+Let's craft final: "我这边无法查看您附带的图片（显示为[Unsupported Image]），因此无法判断图形规律。请您重新上传/粘贴清晰的题目图片，我会按题目编号逐项分析。" Need mention unclear.

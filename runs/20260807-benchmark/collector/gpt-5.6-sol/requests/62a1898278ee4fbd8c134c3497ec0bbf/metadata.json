@@ -1,0 +1,37 @@
+{
+  "completed_stream": true,
+  "ended_at": "2026-08-06T15:30:33.249084Z",
+  "endpoint": "/v1/chat/completions",
+  "finish_reason": "stop",
+  "http_status": 200,
+  "model": "gpt-5.6-sol",
+  "model_alias": "gpt-5.6-sol",
+  "prompt_id": "reasoning-r03",
+  "prompt_notes": "由题库原文自动导出；未添加系统提示词。",
+  "prompt_tags": [
+    "reasoning",
+    "benchmark-20260806"
+  ],
+  "prompt_title": "reasoning #3",
+  "raw_response_path": "requests/62a1898278ee4fbd8c134c3497ec0bbf/response.sse",
+  "repeat_index": 1,
+  "request_id": "62a1898278ee4fbd8c134c3497ec0bbf",
+  "request_sha256": "40e1064ae9abc5907ac32310b2ece927afe6214fe4f9efd31b3a2f3948193358",
+  "response_text_path": "requests/62a1898278ee4fbd8c134c3497ec0bbf/response.md",
+  "run_id": "20260806T152320451413Z-e7275767",
+  "started_at": "2026-08-06T15:28:02.794547Z",
+  "status": "success",
+  "time_to_first_event_ms": 937.327666,
+  "time_to_first_reasoning_ms": null,
+  "time_to_first_text_ms": 118951.848958,
+  "time_to_headers_ms": 937.145208,
+  "total_time_ms": 150455.445208,
+  "usage": {
+    "completion_tokens": 5541,
+    "completion_tokens_details": {
+      "reasoning_tokens": 3439
+    },
+    "prompt_tokens": 106,
+    "total_tokens": 5647
+  }
+}

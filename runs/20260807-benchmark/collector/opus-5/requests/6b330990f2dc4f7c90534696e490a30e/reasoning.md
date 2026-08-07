@@ -1,0 +1,1 @@
+I'm looking at the image to find letters arranged in a star pattern that spell out a question. I

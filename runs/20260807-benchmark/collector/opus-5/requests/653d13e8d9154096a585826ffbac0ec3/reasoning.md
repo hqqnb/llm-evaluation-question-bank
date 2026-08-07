@@ -1,0 +1,91 @@
+I need to find the count of ordered 5-tuples of nonnegative integers where the sum of their squares equals 2024. This is a computational problem, so I'll need to systematically check all possibilities rather than trying to solve it analytically with generating functions.
+
+My strategy is to build up the count recursively: I'll define a function that counts ordered pairs of nonnegative integers whose squares sum to a given value, then extend this to triples, quadruples, and finally 5-tuples. For the 5-tuple count at 2024, I sum over all possible values of the first coordinate x from 0 to 44 (since 45² > 2024), and for each x, I count the 4-tuples whose squares sum to 2024 - x². This requires computing the 4-tuple counts for various intermediate values, which in turn requires the 3-tuple counts, and so on. I'm considering whether to count unordered partitions into 5 squares instead, which might be more manageable, then account for permutations. Another approach is using inclusion-exclusion with signed representations and lower-dimensional counts to derive the nonnegative solution count.
+
+I can extract the nonnegative counts from the signed representation numbers r_1 through r_5 using a recursive formula that accounts for contributions from smaller dimensions. So I need to compute r_1(2024), r_2(2024), r_3(2024), r_4(2024), and r_5(2024).
+
+Some of these have known formulas—r_2 and r_4 have Jacobi formulas, r_3 involves class numbers which is harder, and r_5 doesn't have an elementary formula. But I notice 2024 = 8 × 253 = 8 × 11 × 23, so it's divisible by 8, which might give me some structure to work with for the sum of five squares.
+
+Looking at this modulo 8: odd squares are always ≡ 1 mod 8, while even squares are either ≡ 0 mod 8 (if divisible by 4) or ≡ 4 mod 8 (if ≡ 2 mod 4). So if I track how many odd entries there are and how many even entries are ≡ 2 mod 4, I can figure out what the sum must be modulo 8.
+
+For the sum to be ≡ 0 mod 8, I need the number of odd entries to be either 0 or 4, since any other count would leave a remainder that can't be canceled by the even contributions. → 4t'≡0 mod 8 → t' must be even, so t' ∈ {0,2} among the 3 even y's.
+
+This recursive reduction is elegant but doesn't directly yield counts. Computing c5(2024) by hand is tedious but doable if I organize it systematically: I'll calculate c5(2024) = Σ_{x=0}^{44} c4(2024 - x²), which means finding c4(m) for each m = 2024 - x². Rather than compute each c4 individually, I should use Jacobi's r_4 formula, which gives a closed form for the number of representations.
+
+The challenge is converting r_4(m) to c4(m) — the nonnegative ordered 4-tuples — since r_4 counts signed representations. I could use a generating function approach with theta functions to handle this more systematically.
+
+Now I'm setting up the generating function for nonnegative representations using theta functions, where the nonnegative version φ(q) relates to the standard theta function. For c5, I can expand the fifth power of this generating function as a binomial combination of lower-order r_k terms, giving me a formula that expresses c5(n) in terms of r_5, r_4, r_3, r_2, and r_1.
+
+To find c5(2024), I need to compute each r_k(2024) separately. Starting with r_1: since 2024 falls between 44² and 45², it's not a perfect square, so r_1(2024) = 0. For r_2, I factor 2024 as 2³ × 11 × 23, and since both 11 and 23 are ≡ 3 (mod 4) with odd exponents, the number cannot be written as a sum of two squares, giving r_2(2024) = 0. Now I need to work through r_3, r_4, and r_5.
+
+For r_4, I'll use Jacobi's formula: r_4(n) = 8 times the sum of divisors of n not divisible by 4. The divisors with 2-exponent 0 or 1 are products from {1,2} and {1,11,23,253}, which sum to 3 × 12 × 24 = 864, giving r_4(2024) = 6912.
+
+For r_3, there's a useful identity: r_3(4n) = r_3(n), so I need to find r_3(506) where 506 = 2 × 11 × 23. Now I'm checking that 506 isn't of the form 4^a(8b+7), which would make it unrepresentable—it's not, so representations exist. I need to find r_3(506) by enumerating all ways to write it as a sum of three squares. I'll systematically check values starting with the largest square less than 506 and work down, looking for pairs of squares that sum to the remainder. For a=19, I get (19,12,1) and (19,9,8). Moving to a=18 with remainder 182, I'm checking all possible sums of two squares but none work out. Same issue with a=17 and remainder 217. For a=16, remainder 250 gives me (15,5) and (13,9) as valid pairs, so (16,15,5) and (16,13,9) are solutions.
+
+Now checking a=15 with remainder 281—the minimum value for b² is about 140.5, so b must be at least 12, but testing b=12 through b=15 yields no perfect squares. For a=14 with remainder 310, b must be at least 13, and neither b=13 nor b=14 produce valid squares.
+
+Continuing with a=13 gives remainder 337, and b=13 yields 168 which isn't a perfect square. For a=12 with remainder 362, the constraint b²≥181 would require b≥14, which violates b≤12, so there are no solutions. Since a≤12 would require a²≥168.67, meaning a≥13, I've exhausted all cases.
+
+The complete set of unordered solutions with three distinct nonzero values is (21,8,1), (21,7,4), (20,9,5), (19,12,1), (19,9,8), (16,15,5), (16,13,9). Each solution generates 48 total configurations—6 orderings times 8 sign combinations—giving 336 solutions overall.
+
+Now I'm verifying that r₃(4n) = r₃(n) holds since all representations of 4n must have even components, establishing a bijection with representations of n. I'm also double-checking the cases I eliminated: a=18 with remainder 182 fails because 7 appears to an odd power, a=17 with remainder 217 fails for the same reason, and a=15 with remainder 281 (which is prime and ≡1 mod 4) does decompose as 16²+5², but b=16 exceeds the constraint b≤15.
+
+Continuing through the remaining values: a=14 with remainder 310 fails since 31 appears to an odd power, a=13 with remainder 337 (prime ≡1 mod 4) gives 16²+9² but again b>a, a=16 with remainder 250 yields exactly two representations (5²+15² and 9²+13²), a=19 with remainder 145 also gives two representations, and I'm working through a=20 with remainder 106.
+
+For a=20, I'm using Gaussian integers to verify 106 = 5²+9², which is the only representation. Then checking a=21 with remainder 65 gives two representations (1²+8² and 4²+7²), and a=22 with remainder 22 fails since 11 appears to an odd power. I've also verified that 506 itself isn't a sum of two squares, so there are no edge cases with zero components. Now moving on to computing r₅(2024), which is the more involved calculation.
+
+For r₅(n), I can use the Jacobi identity that expresses it as a sum over r₄ values: r₅(2024) = Σ r₄(2024 - k²) where k ranges from -44 to 44, since r₄ has a closed formula and this becomes computationally tractable. The theta function approach with r_4 convolution is the way forward since computing c_4 directly would require r_3 values, which is much harder. So I'll use the formula c_5(2024) = (r_5 + 37920)/32, where r_5 comes from the 44-term sum of r_4 values at 2024 - k².
+
+Now I need to compute r_5(2024) using the recurrence relation, which means evaluating r_4 at each value 2024 - k² for k from 1 to 44. Since r_4 has a clean formula in terms of the odd part of m and its divisor sum, I'll factor each of these 44 values, extract the odd part, and compute σ to get r_4. For k=4, I get 2008 = 8·251 where 251 is prime, giving σ=252 and r_4=6048. Then k=5 gives 1999, which I'm checking for primality by testing divisibility up to its square root—it turns out to be prime with σ=2000 and r_4=16000.
+
+Continuing through k=6 to k=10, I'm factoring each value: 1988 factors as 4·7·71, 1975 as 25·79, 1960 as 8·5·7², 1943 as 29·67, and 1924 as 4·13·37, computing the divisor sums and corresponding r_4 values for each. Continuing through k=15 to k=19, verifying factorizations and computing the divisor sums and r_4 values for each case. Continuing with k=21, I confirm 1583 is prime with σ=1584 and r_4=12672. For k=22, I get 1540=4·5·7·11 with σ=576 and r_4=13824. Then k=23 gives 1495=5·13·23 with σ=2016 and r_4=16128. Moving to k=24, I have 1448=8·181 where 181 is prime, so σ=182.
+
+For k=25, I'm testing 1399 for primality by checking divisibility up to its square root, confirming it's prime with σ=1400 and r_4=11200. At k=26, I get 1348=4·337 where 337 is prime, giving σ=338 and r_4=8112. For k=27, I'm factoring 1295 as 5·7·37.
+
+Continuing through k=28 to k=31, I'm computing the divisor sums and r_4 values for each: k=28 gives 1240=8·5·31 with σ=192 and r_4=4608; k=29 yields 1183=7·13² with σ=1464 and r_4=11712; k=30 produces 1124=4·281 (281 prime) with σ=282 and r_4=6768; and for k=31, I'm testing whether 1063 is prime by checking divisibility. Continuing through k=36 to k=40, computing the divisor sums and r_4 values for each case, checking primality where needed and factoring composites to determine their sigma functions. Now I'm compiling all the r₄ values for k=1 through k=44 and adding them together step by step. Continuing the sum through the remaining terms to get 441744, then using that to calculate r_5(2024) = 890400 and finally c5 = 29010 after checking the divisibility.
+
+Now I'm verifying the r_4 formula works correctly by testing small cases like n=1 and n=2 to make sure the arithmetic is sound throughout.
+
+Working through each value of k systematically: for k=1, m=2023 factors as 7·17², giving σ=2456 and r_4=19648. For k=2, m=2020=4·5·101 with σ(505)=612, so r_4=14688. For k=3, m=2015=5·13·31, and I'm computing the divisor sum as a product of factors. Continuing through k=7 to k=11, computing the divisor sums and verifying r_4 values for each case—all checks pass as expected. Continuing through k=16 to k=21, checking that each perfect square subtracted from 2024 yields a composite or prime number with the divisor sum property holding, verifying the pattern continues to work. Continuing through k=27 to k=33, checking each perfect square subtraction from 2024, computing the divisor sums, and verifying they all scale correctly to match the pattern. k=39 gives 503 which is prime, so σ=504 → 4032 ✓. Continuing through k=40 to k=44, I'm verifying each difference from 2024, factoring them, computing their divisor sums, and multiplying by 8 to check they're all divisible by 8. Now I'm grouping the results to sum them carefully, starting with k=1 through k=10. Group C sums to 103984, and I'm working through Group D now, which has 14 terms and is currently at 53056 after the first nine additions.
+
+Finishing Group D's sum: adding the remaining five values gives 61840. The total across all groups is 441744, which checks out.
+
+Now I'm calculating r_5(2024) using the formula with the sum of divisors, getting 890400. Then I'm computing c5 by dividing 928320 by 32 to get 29010. I'm verifying this against the theta function formula where φ equals (θ+1)/2, and I need to expand φ^5 to confirm the coefficient. The verification checks are working out: for n=1 I get 5 solutions as expected, and for n=2 I get 10 solutions. I'm also cross-checking r_5(2) using the convolution identity to make sure the recurrence relation holds, and now I need to verify r_3(2024) more carefully.
+
+I'm checking whether 2024 can be expressed as a sum of three squares by examining the case where all coordinates are even, which reduces to finding representations of 506 as a sum of three squares. I've verified several triples like 21²+8²+1²=506, 20²+9²+5²=506, and others, confirming that the enumeration of seven primitive-ish triples is correct. Splitting c5(2024) into cases: all even entries versus four odd and one ≡ 2 mod 4. For the all-even case, I need c5(506). Using the formula with r_k values: r_1(506)=0, r_2(506)=0, r_3(506)=336, r_4(506)=6912 (same as r_4(2024) since they share the odd part 253), and now computing r_5(506) by summing r_4 values over shifted arguments.
+
+Computing r_4 for each k from 1 to 8... Continuing through the remaining values and accumulating the running sum of r_4 contributions across all k values up to k=22.
+
+Now I'm calculating r_5(506) using the sum of r_4 values, then deriving c_5(506) by applying the formula with the divisor 32, which gives 6750 for the all-even case. This means the o=4 case should account for the difference between the total and this all-even contribution, leaving 22260 to verify independently.
+
+For the o=4 case, I'm setting up a count where I choose which of the 5 coordinates is even (congruent to 2 mod 4), then count ordered 4-tuples of positive odd numbers whose squares sum with the even coordinate's square to 2024. The contribution is 5 times this count D, where D sums over all valid even values.
+
+The even coordinate e must satisfy e ≡ 2 (mod 4) with e ≤ 44, giving e ∈ {2, 6, 10, 14, 18, 22, 26, 30, 34, 38, 42}. For each e, I need to count ordered 4-tuples of positive odd integers whose squares sum to 2024 - e², and I'm recalling Jacobi's formula relating this to divisor sums.
+
+Now I'm working through the substitution: if each odd integer is written as 2b_i + 1, then the sum of their squares becomes a constraint on the triangular numbers formed by the b_i values, which will let me convert this into a counting problem for nonnegative integers.
+
+I can verify this using the known result that the number of representations of n as a sum of four triangular numbers equals σ(2n+1). Testing small cases: n=0 gives σ(1)=1 with just the zero representation, n=1 gives σ(3)=4 with one of the four b_i equal to 1, and n=2 gives σ(5)=6 from choosing two positions for the 1's.
+
+Since the x_i must be odd positive integers (from x_i = 2b_i+1), I can substitute n = (m-4)/8 to get N(m) = σ(2n+1) = σ(m/4), which holds when m ≡ 4 (mod 8) so that m/4 is an integer.
+
+Let me verify with specific values: m=4 gives σ(1)=1 ✓, m=12 gives σ(3)=4 ✓, and m=20 gives σ(5)=6 ✓. Now for m = 2024 - e² where e ≡ 2 (mod 4), I need to check the congruence: since e = 4j+2, we have e² ≡ 4 (mod 8), and 2024 ≡ 0 (mod 8), so m ≡ 4 (mod 8) as required.
+
+Now I'm computing σ(m/4) for each valid value of e, factoring m/4 to determine the divisor sum.
+
+Summing all these σ values gives 4452, which when multiplied by 5 yields 22260 — exactly matching the difference 29010 - 6750, confirming the o=4 contribution independently.
+
+Now I want to verify c₅(506) = 6750 using the same decomposition approach. Since 506 ≡ 2 mod 8, the parity constraint forces exactly 2 odd entries and 3 even entries across any solution. This means I need to count ordered tuples of two positive odd squares and three non-negative even squares summing to 506.
+
+For the even entries b = 2c, so 4Σc² = 506 - (a₁² + a₂²). Since each odd square is ≡ 1 mod 8, the sum of two odd squares is ≡ 2 mod 8, making 506 - s ≡ 0 mod 8 as required. This gives Σc² = (506 - s)/4, which is always even. Rather than enumerate all possible values of s (the sum of two odd squares), I'll use the self-consistency check: if the formula holds, then all 6750 solutions should indeed have exactly this 2-odd, 3-even structure.
+
+I can validate this through the theta function formula, which I've already checked on smaller cases. The o = 4 branch provides a strong independent verification: the total 29010 came from (r₅(2024) + 37920)/32, and the split used c₅(506) from the same formula applied to 506. Both depend on my r₄ calculations, so their agreement—specifically that 29010 - 6750 = 22260 = 5 × 4452, which matches the Jacobi triangular formula computed completely independently—confirms the difference between two sums that share underlying structure.
+
+The relation held exactly across different value sets, which would be unlikely if there were an arithmetic error. Since the check validates that 441744 - 85584 = 356160 relative to independent computation, an error in the 2024 sum would have to be matched by a corresponding error in the 506 sum to preserve the relation. I'm reasonably confident in these values now.
+
+Now I'm verifying c5(506) = 6750 through a different approach using the constraint that all solutions have exactly 2 odd entries, so I can count the even triples separately for each odd pair configuration.
+
+I need to enumerate all unordered pairs of odd positive integers {a1, a2} where a1² + a2² ≤ 506, compute q = (506 - s)/4 for each sum s, then look up c3(q) for the corresponding even triples. Starting with the odd values 1 through 21, I'm calculating the sum of squares for each pair and the resulting q values—for instance, (1,1) gives s = 2 and q = 126. Continuing through the coordinate pairs and their corresponding values, tracking how the metrics shift as the parameters increase across different combinations. Let me try a different sanity check using a global identity or alternative convolution approach. I could verify c₅(2024) by decomposing it into the two cases: total = 22260 + c₅(506), then compute c₅(506) directly by considering that all solutions have exactly 2 odd components and using a formula similar to the odd-square technique.
+
+I'm exploring using theta functions to extract the coefficient: specifically, I need the coefficient of q^506 in φ_odd(q)² φ_even(q)³, where φ_even captures even squares and φ_odd captures odd squares. This is getting complex without more computational machinery, so I'm trying a more direct verification instead by re-summing the r₄ values for 506 minus each perfect square to check if they total 85584. Let me verify a few r_4 values for the 506 list to make sure the calculations are right, checking the parity handling for both odd and even cases. I'm also confirming that 2024 itself has the correct r_4 value computed with its odd part. Everything checks out—the answer is 29010.
+
+Now I'll organize the solution cleanly: set up the theta function framework, present the r_4 values in a compact table, and show how the mod-8 decomposition splits into 22260 solutions with four odd coordinates and 6750 with all even coordinates, giving the final total. I'll write this up in Chinese.

@@ -1,0 +1,43 @@
+{
+  "completed_stream": true,
+  "ended_at": "2026-08-06T15:29:22.365522Z",
+  "endpoint": "/v1/responses",
+  "finish_reason": "stop",
+  "http_status": 200,
+  "model": "Opus 5",
+  "model_alias": "opus-5",
+  "prompt_id": "reasoning-r01",
+  "prompt_notes": "由题库原文自动导出；未添加系统提示词。",
+  "prompt_tags": [
+    "reasoning",
+    "benchmark-20260806"
+  ],
+  "prompt_title": "reasoning #1",
+  "raw_response_path": "requests/8d3a6e50ea5240a381a6d4b426e1ae20/response.sse",
+  "reasoning_text_path": "requests/8d3a6e50ea5240a381a6d4b426e1ae20/reasoning.md",
+  "repeat_index": 1,
+  "request_id": "8d3a6e50ea5240a381a6d4b426e1ae20",
+  "request_sha256": "7118aa604134c0f6327e0d5b61a11c355ec1b167d3e68a3fb0502b003a2594b1",
+  "response_text_path": "requests/8d3a6e50ea5240a381a6d4b426e1ae20/response.md",
+  "run_id": "20260806T152320959148Z-e1ff674f",
+  "started_at": "2026-08-06T15:23:20.960844Z",
+  "status": "success",
+  "time_to_first_event_ms": 3858.972,
+  "time_to_first_reasoning_ms": 3859.494292,
+  "time_to_first_text_ms": 333000.914917,
+  "time_to_headers_ms": 3858.16425,
+  "total_time_ms": 361406.856083,
+  "usage": {
+    "completion_tokens": 8349,
+    "input_tokens": 38508,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 8349,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 38508,
+    "total_tokens": 46857
+  }
+}

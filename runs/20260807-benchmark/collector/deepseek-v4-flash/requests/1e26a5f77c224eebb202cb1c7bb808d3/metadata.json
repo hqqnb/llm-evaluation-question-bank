@@ -1,0 +1,55 @@
+{
+  "completed_stream": true,
+  "ended_at": "2026-08-06T15:53:09.322941Z",
+  "endpoint": "/v1/chat/completions",
+  "finish_reason": "stop",
+  "http_status": 200,
+  "model": "DeepSeek-V4-Flash",
+  "model_alias": "deepseek-v4-flash",
+  "prompt_id": "reasoning-r04",
+  "prompt_notes": "由题库原文自动导出；未添加系统提示词。",
+  "prompt_tags": [
+    "reasoning",
+    "benchmark-20260806"
+  ],
+  "prompt_title": "reasoning #4",
+  "raw_response_path": "requests/1e26a5f77c224eebb202cb1c7bb808d3/response.sse",
+  "reasoning_text_path": "requests/1e26a5f77c224eebb202cb1c7bb808d3/reasoning.md",
+  "repeat_index": 1,
+  "request_id": "1e26a5f77c224eebb202cb1c7bb808d3",
+  "request_sha256": "f00501ba97c1d011ea0aeb72cff51be8f2ff9f29ad1c6c93bcb4a567f00eab60",
+  "response_text_path": "requests/1e26a5f77c224eebb202cb1c7bb808d3/response.md",
+  "run_id": "20260806T152732502582Z-74ee529a",
+  "started_at": "2026-08-06T15:52:48.747617Z",
+  "status": "success",
+  "time_to_first_event_ms": 546.655041,
+  "time_to_first_reasoning_ms": 980.101125,
+  "time_to_first_text_ms": 18571.140833,
+  "time_to_headers_ms": 545.962875,
+  "total_time_ms": 20574.592416,
+  "usage": {
+    "claude_cache_creation_1_h_tokens": 0,
+    "claude_cache_creation_5_m_tokens": 0,
+    "completion_tokens": 1708,
+    "completion_tokens_details": {
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 0,
+      "text_tokens": 0
+    },
+    "generated_images": 0,
+    "input_tokens": 153,
+    "input_tokens_details": null,
+    "output_tokens": 0,
+    "prompt_tokens": 153,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": 0,
+      "text_tokens": 0
+    },
+    "total_tokens": 1861,
+    "usage_semantic": "openai",
+    "usage_source": "anthropic"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "content-type": "text/event-stream;charset=utf-8",
+  "date": "Thu, 06 Aug 2026 16:36:18 GMT",
+  "req-arrive-time": "1786034177850",
+  "req-cost-time": "626",
+  "resp-start-time": "1786034178477",
+  "server": "istio-envoy",
+  "transfer-encoding": "chunked",
+  "vary": "Origin",
+  "x-dashscope-call-gateway": "true",
+  "x-dashscope-finished": "false",
+  "x-dashscope-timeout": "3600",
+  "x-envoy-upstream-service-time": "626",
+  "x-request-id": "771c7194-1270-9ddc-845a-3e1d60e91484"
+}

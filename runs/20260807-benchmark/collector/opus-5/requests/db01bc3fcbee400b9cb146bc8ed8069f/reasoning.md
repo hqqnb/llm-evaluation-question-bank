@@ -1,0 +1,3 @@
+I'm setting up the constraint that with three coins each having P(heads) = 1/3, the number of tails must be even—so either 0 or 2 tails. This means the valid outcomes are all heads (HHH) or exactly one head with two tails (HTT, THT, TTH). I'm defining p as the probability of HHH and a₁, a₂, a₃ as the probabilities for each coin being the sole head, which must sum to 1.
+
+From the marginal constraint that each coin has P(heads) = 1/3, I get p + aᵢ = 1/3 for each coin i. Summing these three equations gives 3p + (a₁+a₂+a₃) = 1, and since a₁+a₂+a₃ = 1 - p, I can solve: 3p + 1 - p = 1, which forces p = 0. This means each outcome HTT, THT, TTH has probability 1/3, satisfying all constraints. The answer is 0.

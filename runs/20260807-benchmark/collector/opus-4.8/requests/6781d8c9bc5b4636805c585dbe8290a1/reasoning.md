@@ -1,0 +1,1 @@
+I'm planning out an elevator simulator where users spawn people on different floors, and three elevators transport them one person at a time to their random target floors—I'll add tooltips showing destinations on hover and smooth animations throughout, all built as a single HTML file with embedded CSS and JavaScript.

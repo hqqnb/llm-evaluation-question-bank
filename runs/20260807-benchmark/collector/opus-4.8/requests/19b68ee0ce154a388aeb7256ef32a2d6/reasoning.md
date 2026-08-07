@@ -1,0 +1,1 @@
+I'm building a browser-based archery game with four targets, a timer, and a leaderboard system all in a single HTML file.Both tests are passing, so I can report the results.

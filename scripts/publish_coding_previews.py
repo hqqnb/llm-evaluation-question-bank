@@ -22,10 +22,24 @@ HTML_DOCUMENT_PATTERN = re.compile(
     r"(?is)(<!doctype\s+html[^>]*>.*?</html\s*>|<html\b.*?</html\s*>)"
 )
 SVG_DOCUMENT_PATTERN = re.compile(r"(?is)(<svg\b.*?</svg\s*>)")
+EXTERNAL_URL_PATTERN = re.compile(r"https?://[^\s\"'<>)\]]+")
 
 
 def sha256_bytes(content: bytes) -> str:
     return hashlib.sha256(content).hexdigest()
+
+
+def scan_external_urls(text: str) -> list[str]:
+    """Return deduplicated external http(s) URLs referenced by an answer."""
+    urls = []
+    seen = set()
+    for match in EXTERNAL_URL_PATTERN.finditer(text):
+        url = match.group(0).rstrip(".,;:!?，。；：！？")
+        if url in seen:
+            continue
+        seen.add(url)
+        urls.append(url)
+    return urls
 
 
 def fenced_candidates(response: str) -> list[tuple[str, str]]:
@@ -160,7 +174,9 @@ def publish(
             counts["not_successful"] += 1
             continue
         answer_path = ROOT / record["answer_path"]
-        artifact = extract_artifact(answer_path.read_text(encoding="utf-8"))
+        answer_text = answer_path.read_text(encoding="utf-8")
+        record["external_urls"] = scan_external_urls(answer_text)
+        artifact = extract_artifact(answer_text)
         if artifact is None:
             record["preview_status"] = "no-runnable-artifact-extracted"
             counts["not_extracted"] += 1
@@ -185,6 +201,7 @@ def publish(
             "artifact_file": artifact_name,
             "artifact_sha256": sha256_bytes(artifact_bytes),
             "source_answer_sha256": record["answer_sha256"],
+            "external_urls": record["external_urls"],
             "extraction_policy": "mechanical-only-no-code-repair",
         }
         (destination / "metadata.json").write_text(

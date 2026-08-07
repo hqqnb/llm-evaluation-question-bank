@@ -1,0 +1,3 @@
+I'm working through the possible outcomes when flipping three coins, each with a 1/3 probability of heads. Since the number of tails must be even, I can only get 0 tails (all heads) or 2 tails, ruling out the cases with 1 or 3 tails.
+
+Setting up equations based on the marginal probabilities for each coin being 1/3, I find that the probability of all heads must equal zero, leaving only the three configurations with exactly one head and two tails, each occurring with probability 1/3. Now I'm verifying this makes sense by checking the expected number of heads across all coins.

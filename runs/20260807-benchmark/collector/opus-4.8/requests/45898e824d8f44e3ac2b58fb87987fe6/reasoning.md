@@ -1,0 +1,1 @@
+I'm looking at a puzzle where letters are scattered across an image, and some of them form a star pattern that spells out a question. The challenge is identifying which specific letters are arranged in that star shape to read the hidden question, though the exact letters aren't coming through clearly from what I can see.

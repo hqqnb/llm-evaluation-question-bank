@@ -1,0 +1,1 @@
+I'm building an interactive 3D contact lens case using Three.js with two circular compartments labeled L and R, complete with clickable lids that animate open when interacted with.

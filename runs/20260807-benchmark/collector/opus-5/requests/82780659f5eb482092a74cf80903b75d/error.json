@@ -1,0 +1,5 @@
+{
+  "body": null,
+  "message": "Responses API failed: upstream exception: error: {\"message\":\"Encountered an unexpected error when processing the request, please try again.\"}",
+  "type": "stream_parse_error"
+}

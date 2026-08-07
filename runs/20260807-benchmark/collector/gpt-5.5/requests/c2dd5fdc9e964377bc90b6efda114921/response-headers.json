@@ -1,0 +1,20 @@
+{
+  "cache-control": "no-cache",
+  "connection": "keep-alive",
+  "content-type": "text/event-stream",
+  "date": "Thu, 06 Aug 2026 17:11:11 GMT",
+  "referrer-policy": "strict-origin-when-cross-origin",
+  "request-id": "2026080701111051663466818099443",
+  "server": "ZT/2.0",
+  "transfer-encoding": "chunked",
+  "x-apisix-upstream-status": "200",
+  "x-client-request-id": "a878c297-18ab-42c3-a29a-9d9f3189d4d4",
+  "x-content-type-options": "nosniff",
+  "x-envoy-upstream-service-time": "794",
+  "x-frame-options": "DENY",
+  "x-oneapi-request-id": "2026080701111051663466818099443",
+  "x-ratelimit-limit-requests": "300",
+  "x-ratelimit-remaining-requests": "299",
+  "x-request-id": "4e019c81-c4dc-46cb-b50c-9b05037b38c7",
+  "x-zt-request-id": "1fe55416-e7e1-4e39-8147-95d47bcde457"
+}

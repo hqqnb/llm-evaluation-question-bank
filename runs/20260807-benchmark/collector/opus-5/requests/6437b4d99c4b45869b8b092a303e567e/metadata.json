@@ -1,0 +1,43 @@
+{
+  "completed_stream": true,
+  "ended_at": "2026-08-07T03:15:20.795282Z",
+  "endpoint": "/v1/responses",
+  "finish_reason": "stop",
+  "http_status": 200,
+  "model": "Opus 5",
+  "model_alias": "opus-5",
+  "prompt_id": "multimodal-mm03",
+  "prompt_notes": "由题库原文自动导出；未添加系统提示词。",
+  "prompt_tags": [
+    "multimodal",
+    "benchmark-20260806"
+  ],
+  "prompt_title": "multimodal #3",
+  "raw_response_path": "requests/6437b4d99c4b45869b8b092a303e567e/response.sse",
+  "reasoning_text_path": "requests/6437b4d99c4b45869b8b092a303e567e/reasoning.md",
+  "repeat_index": 1,
+  "request_id": "6437b4d99c4b45869b8b092a303e567e",
+  "request_sha256": "6268ddf6b1a6217f8abdfc1365d547abcd890031af5f4c082b159f8f283ca5d2",
+  "response_text_path": "requests/6437b4d99c4b45869b8b092a303e567e/response.md",
+  "run_id": "20260807T025127665517Z-2ea50785",
+  "started_at": "2026-08-07T03:14:50.707067Z",
+  "status": "success",
+  "time_to_first_event_ms": 6382.352875,
+  "time_to_first_reasoning_ms": 6382.578708,
+  "time_to_first_text_ms": 16077.822583,
+  "time_to_headers_ms": 6381.213125,
+  "total_time_ms": 30088.483375,
+  "usage": {
+    "completion_tokens": 812,
+    "input_tokens": 9427,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 812,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 9427,
+    "total_tokens": 10239
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "enable_thinking": true,
+  "messages": [
+    {
+      "content": "以下英文单词都符合某个共同规律：\ndad, dab, gut, low, cat\n以下单词不符合这个规律：\near, cop, ego, mom, ate\n共同规律是：将单词中的全部字母重新排列后，恰好能得到一个不同的常见英文单词。不计算原单词本身。\n下面哪个单词不符合该规律？\nA. leg\nB. dam\nC. rat\nD. car\nE. bin\n\n输出要求：\n请给出完整推理过程，并在最后一行写“最终答案：<答案>”。",
+      "role": "user"
+    }
+  ],
+  "model": "qwen3.8-max",
+  "stream": true,
+  "temperature": 0.6
+}

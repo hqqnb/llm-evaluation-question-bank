@@ -1,0 +1,3 @@
+I need to find the expected number of letters until the pattern "TENETENET" appears using the formula that sums 26^L for each border length L, where a border is a position where the pattern's prefix matches its suffix.
+
+After checking all possible border lengths, I find that only k=9 (the full pattern), k=5 (prefix "TENET" matches suffix at positions 5-9), and k=1 (single letter "T") create valid borders. Computing the powers of 26 and summing them: 26^9 + 26^5 + 26^1 = 5,429,503,678,976 + 11,881,376 + 26 = 5,429,515,576,378.

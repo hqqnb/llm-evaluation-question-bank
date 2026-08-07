@@ -1,0 +1,42 @@
+{
+  "completed_stream": true,
+  "ended_at": "2026-08-06T16:26:17.718434Z",
+  "endpoint": "/v1/chat/completions",
+  "finish_reason": "stop",
+  "http_status": 200,
+  "model": "hy3",
+  "model_alias": "hy3",
+  "prompt_id": "reasoning-r02",
+  "prompt_notes": "原题带表格图片，无多模态能力模型使用文字表格版重测。",
+  "prompt_tags": [
+    "reasoning",
+    "benchmark-20260806",
+    "text-variant"
+  ],
+  "prompt_title": "reasoning #2",
+  "raw_response_path": "requests/09475082557b42f9bbb9a606deefaa3c/response.sse",
+  "reasoning_text_path": "requests/09475082557b42f9bbb9a606deefaa3c/reasoning.md",
+  "repeat_index": 1,
+  "request_id": "09475082557b42f9bbb9a606deefaa3c",
+  "request_sha256": "e4d2f10c04c78d7f2c3461dbcad58cf29d840b80abf0c91b305c51758162736f",
+  "response_text_path": "requests/09475082557b42f9bbb9a606deefaa3c/response.md",
+  "run_id": "20260806T161628672165Z-069c9bc0",
+  "started_at": "2026-08-06T16:16:28.673403Z",
+  "status": "success",
+  "time_to_first_event_ms": 852.1355,
+  "time_to_first_reasoning_ms": 852.368833,
+  "time_to_first_text_ms": 572871.282333,
+  "time_to_headers_ms": 849.507458,
+  "total_time_ms": 589011.937833,
+  "usage": {
+    "completion_tokens": 37066,
+    "completion_tokens_details": {
+      "reasoning_tokens": 35868
+    },
+    "prompt_tokens": 182,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 37248
+  }
+}

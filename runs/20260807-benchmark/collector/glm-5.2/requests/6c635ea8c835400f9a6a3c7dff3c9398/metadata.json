@@ -1,0 +1,34 @@
+{
+  "completed_stream": true,
+  "ended_at": "2026-08-06T17:24:11.071593Z",
+  "endpoint": "/v1/chat/completions",
+  "finish_reason": "stop",
+  "http_status": 200,
+  "model": "GLM-5.2",
+  "model_alias": "glm-5.2",
+  "prompt_id": "reasoning-r07",
+  "prompt_notes": "由题库原文自动导出；未添加系统提示词。",
+  "prompt_tags": [
+    "reasoning",
+    "benchmark-20260806"
+  ],
+  "prompt_title": "reasoning #7",
+  "raw_response_path": "requests/6c635ea8c835400f9a6a3c7dff3c9398/response.sse",
+  "repeat_index": 1,
+  "request_id": "6c635ea8c835400f9a6a3c7dff3c9398",
+  "request_sha256": "1011bc8a47768129f72dd820b8eb8ea59f694566346bc55b2c01311458ffb7c6",
+  "response_text_path": "requests/6c635ea8c835400f9a6a3c7dff3c9398/response.md",
+  "run_id": "20260806T171119351049Z-f5787e47",
+  "started_at": "2026-08-06T17:23:53.280620Z",
+  "status": "success",
+  "time_to_first_event_ms": 1928.649916,
+  "time_to_first_reasoning_ms": null,
+  "time_to_first_text_ms": 15545.74,
+  "time_to_headers_ms": 1928.221041,
+  "total_time_ms": 17790.898416,
+  "usage": {
+    "completion_tokens": 1814,
+    "prompt_tokens": 125,
+    "total_tokens": 1939
+  }
+}

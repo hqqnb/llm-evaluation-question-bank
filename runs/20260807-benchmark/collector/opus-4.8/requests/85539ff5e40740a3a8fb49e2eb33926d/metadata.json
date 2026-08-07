@@ -1,0 +1,43 @@
+{
+  "completed_stream": true,
+  "ended_at": "2026-08-06T17:42:59.996332Z",
+  "endpoint": "/v1/responses",
+  "finish_reason": "stop",
+  "http_status": 200,
+  "model": "Opus 4.8",
+  "model_alias": "opus-4.8",
+  "prompt_id": "coding-c04",
+  "prompt_notes": "由题库原文自动导出；未添加系统提示词。",
+  "prompt_tags": [
+    "coding",
+    "benchmark-20260806"
+  ],
+  "prompt_title": "coding #4",
+  "raw_response_path": "requests/85539ff5e40740a3a8fb49e2eb33926d/response.sse",
+  "reasoning_text_path": "requests/85539ff5e40740a3a8fb49e2eb33926d/reasoning.md",
+  "repeat_index": 1,
+  "request_id": "85539ff5e40740a3a8fb49e2eb33926d",
+  "request_sha256": "fbee3f3ed9fa693986aa3e98c1a51a94bd38964f36b1de2527a2e2939597e7fc",
+  "response_text_path": "requests/85539ff5e40740a3a8fb49e2eb33926d/response.md",
+  "run_id": "20260806T170905030554Z-1f20a465",
+  "started_at": "2026-08-06T17:41:48.946217Z",
+  "status": "success",
+  "time_to_first_event_ms": 3347.11975,
+  "time_to_first_reasoning_ms": 3347.840958,
+  "time_to_first_text_ms": 3771.708875,
+  "time_to_headers_ms": 3344.80625,
+  "total_time_ms": 71049.558208,
+  "usage": {
+    "completion_tokens": 3332,
+    "input_tokens": 13852,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 3332,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 13852,
+    "total_tokens": 17184
+  }
+}

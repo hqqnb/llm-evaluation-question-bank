@@ -1,0 +1,3 @@
+Looking at the street signs in the image, I can see a blue "Spadina Ave" sign at the top right, and below it a no-left-turn restriction sign showing times "730AM - 930AM" and "330PM - 630PM" for weekdays. The tram's electronic display shows route 510 heading to Spadina and Union Station, though the text is partially difficult to make out.
+
+The streetcar body number is 4113, visible above the front windshield and on the lower side. The main traffic light is showing red, and the pedestrian signal displays a red hand indicating "Don't Walk." I can also see the Canadian maple leaf flag hanging on a pole on the left side of the image, roughly mid-height. Since it's Monday at 8:00 AM, this falls within the restricted left-turn window of 7:30-9:30 AM.

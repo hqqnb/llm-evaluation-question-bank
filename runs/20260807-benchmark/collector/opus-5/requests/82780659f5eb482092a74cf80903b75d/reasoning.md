@@ -1,0 +1,5 @@
+Looking at the street signs and transit information in the image, I can see a blue Spadina Avenue sign at the top right, with a no-left-turn restriction sign below it showing specific time windows on weekdays. The streetcar's electronic display shows what appears to be route 505 or 510 heading toward Broadview Station via Dundas, though the exact route number is a bit difficult to make out clearly.
+
+The car number 4113 is visible above the windshield. The main traffic signal shows red, and the pedestrian signal displays a don't-walk hand. I can spot the Canadian maple leaf flag hanging vertically on the left side of the image near the storefronts. The sign pole on the right also shows a no-right-turn-on-red restriction.
+
+For the timing scenarios: at Monday 8:00 AM, the left turn would be prohibited since that falls within the 7:30–9:30 AM restriction window on weekdays. At Monday noon, the left turn would be permitted since that time falls outside both restricted periods shown on the sign.

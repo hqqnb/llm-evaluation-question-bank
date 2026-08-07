@@ -1,0 +1,38 @@
+{
+  "completed_stream": true,
+  "ended_at": "2026-08-06T17:37:17.336240Z",
+  "endpoint": "/v1/chat/completions",
+  "finish_reason": "length",
+  "http_status": 200,
+  "model": "kimi-k3",
+  "model_alias": "kimi-k3",
+  "prompt_id": "reasoning-r08",
+  "prompt_notes": "由题库原文自动导出；未添加系统提示词。",
+  "prompt_tags": [
+    "reasoning",
+    "benchmark-20260806"
+  ],
+  "prompt_title": "reasoning #8",
+  "raw_response_path": "requests/a4453decd3d348ea9f2e9f5788cab134/response.sse",
+  "reasoning_text_path": "requests/a4453decd3d348ea9f2e9f5788cab134/reasoning.md",
+  "repeat_index": 1,
+  "request_id": "a4453decd3d348ea9f2e9f5788cab134",
+  "request_sha256": "dfbe419ca817b062082b3147fe905b6944e88cea69c1e066150e2bbcf2a62db6",
+  "response_text_path": "requests/a4453decd3d348ea9f2e9f5788cab134/response.md",
+  "run_id": "20260806T152455862562Z-676ffbcd",
+  "started_at": "2026-08-06T16:46:24.551523Z",
+  "status": "success",
+  "time_to_first_event_ms": 1910.876291,
+  "time_to_first_reasoning_ms": 1910.926666,
+  "time_to_first_text_ms": null,
+  "time_to_headers_ms": 1910.306666,
+  "total_time_ms": 3052809.742333,
+  "usage": {
+    "completion_tokens": 131072,
+    "completion_tokens_details": {
+      "reasoning_tokens": 131069
+    },
+    "prompt_tokens": 217,
+    "total_tokens": 131289
+  }
+}
