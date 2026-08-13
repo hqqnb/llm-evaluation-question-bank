@@ -1,0 +1,36 @@
+{
+  "model": "deepseek-v4-pro",
+  "mode": "codex-native-agent",
+  "runs": [
+    {
+      "task": "support.gorgias_refund_processing",
+      "score": 1.0,
+      "passed": 37,
+      "total": 37
+    },
+    {
+      "task": "support.intercom_demo_scheduling",
+      "score": 1.0,
+      "passed": 30,
+      "total": 30
+    },
+    {
+      "task": "operations.asana_fire_drill",
+      "score": 1.0,
+      "passed": 5,
+      "total": 5
+    },
+    {
+      "task": "sales.negative_selection",
+      "score": 1.0,
+      "passed": 7,
+      "total": 7
+    },
+    {
+      "task": "finance.expense_anomaly_detection",
+      "score": 1.0,
+      "passed": 4,
+      "total": 4
+    }
+  ]
+}

