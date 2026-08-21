@@ -4,8 +4,10 @@
 均进入 `llm-evaluation-question-bank`；C01-C07 的可运行 Coding 交付物另有
 GitHub Pages 预览。
 
-本轮不发布分数、排名或正式结论。Coding 预览只做机械提取，不修复模型原始代码。
-Agent 页面只保留模型可见内容，不公开隐藏推理。
+本轮不发布推理/Coding 分数、排名或综合结论。Agent 已新增
+[`gpt-5.6-sol` 老师模型评审](./agent-teacher-review.md)，规则评分只保留为基线。
+Coding 预览只做机械提取，不修复模型原始代码。Agent 轨迹页只保留模型可见内容，
+不公开隐藏推理。
 
 ## 推理题
 
@@ -51,7 +53,8 @@ C08 按用户要求未运行，因此没有模型代码或预览链接。
 | `agent-t07` | `success` | [查看](./responses/agent-t07/glm-5.3.md) |
 | `agent-t08` | `success` | [查看](./responses/agent-t08/glm-5.3.md) |
 
-Agent 页面仅归档模型可见工具闭环，未写入正式分数或排名。
+Agent 页面归档模型可见工具闭环。老师模型评分与规则基线的对照见
+[Agent 老师模型评审](./agent-teacher-review.md)；该分数尚未进入正式排名或如流。
 
 ## 多模态题
 
