@@ -1,0 +1,10 @@
+{
+  "campaign_id": "20260820-glm53",
+  "model_aliases": [
+    "glm-5.3"
+  ],
+  "created_at": "2026-08-21",
+  "record_count": 28,
+  "source_run": "/Users/zay/Documents/模型测评项目/evaluation/single_turn/review-20260820",
+  "note": "Publication archive only; no formal score or ranking written."
+}

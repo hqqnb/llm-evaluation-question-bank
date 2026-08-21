@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0",
+  "campaign_id": "20260820-glm53",
+  "created_at": "2026-08-21",
+  "model": "GLM-5.3",
+  "model_alias": "glm-5.3",
+  "repeat": 1,
+  "scope": {
+    "reasoning": "R01-R08 archived",
+    "coding": "C01-C07 archived and previewed; C08 not run by user request",
+    "agent": "T01-T08 visible trajectories archived",
+    "multimodal": "MM01-MM04 not run"
+  },
+  "publication_policy": {
+    "raw_answers": "question-bank",
+    "coding_previews": "llm-evaluation-previews",
+    "extraction": "mechanical-only-no-code-repair",
+    "scores": "not published"
+  },
+  "record_count": 28
+}
